@@ -1,0 +1,78 @@
+@import "../../../styles/variables";
+
+.home-threeWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20rem 0;
+}
+.home-three {
+  width: 70%;
+  min-width: 120rem;
+  &--images {
+    position: relative;
+    &__left {
+    }
+    &__right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &--infoOne {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+    letter-spacing: 0.02em;
+    width: 50%;
+    padding-left: 10rem;
+    color: $color-lightblue;
+  }
+  &--title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 999;
+    line-height: 77px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 50%;
+    padding-left: 10rem;
+    color: $color-black;
+  }
+  &--infoTwo {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+    letter-spacing: 0.02em;
+    width: 50%;
+    padding-left: 10rem;
+    color: $color-black;
+  }
+  &--descOne {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: 0.02em;
+    width: 50%;
+    padding-left: 10rem;
+    color: $color-lightblue;
+    margin: 2rem 0;
+    margin-right: 5rem;
+  }
+  &--descTwo {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    width: 50%;
+    padding-left: 10rem;
+    color: $color-black;
+  }
+  &--btn {
+    outline: none;
+    border: none;
+  }
+  &--btnWrapper {
+    display: flex;
+    align-items: center;
+  }
+}

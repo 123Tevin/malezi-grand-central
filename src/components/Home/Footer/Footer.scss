@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.footer {
+  height: 21rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black;
+
+  & p {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: white;
+    margin: 2rem 0;
+  }
+}

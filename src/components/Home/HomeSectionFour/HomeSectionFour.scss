@@ -1,0 +1,76 @@
+@import "../../../styles/variables";
+
+.home-fourWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20rem 0;
+}
+.home-four {
+  width: 70%;
+  min-width: 120rem;
+  &--images {
+    position: relative;
+    display: flex;
+    &__left {
+      position: absolute;
+      bottom: 0;
+      z-index: 100;
+    }
+    &__right {
+      margin-left: 23rem;
+    }
+  }
+  &--infoOne {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 999;
+    line-height: 77px;
+    letter-spacing: 0.02em;
+    color: $color-green;
+    margin-left: 50%;
+    text-align: center;
+  }
+  &--title {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    text-align: center;
+    margin-left: 50%;
+  }
+  &--infoTwo {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    margin-left: 50%;
+  }
+  &--descOne {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: 0.02em;
+    color: $color-green;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  &--descTwo {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    margin-left: 50%;
+  }
+  &--btn {
+    outline: none;
+    border: none;
+  }
+  &--btnWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: calc(50% - 35rem);
+  }
+}

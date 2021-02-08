@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+.nav {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  background-color: $color-white;
+  &__menu {
+    margin-right: 5rem;
+  }
+}

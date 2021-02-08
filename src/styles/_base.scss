@@ -1,0 +1,54 @@
+@import "./mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  @include respond(tablet-large) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tablet) {
+    font-size: 50%;
+  }
+  @include respond(mobile-medium) {
+    font-size: 48%;
+  }
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Sofia Pro;
+
+  color: var(--color-front);
+  background-color: var(--color-background);
+  &::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--color-grey);
+    border-radius: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 2rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+  }
+}
+
+.section-divider {
+  margin-top: 8rem;
+}

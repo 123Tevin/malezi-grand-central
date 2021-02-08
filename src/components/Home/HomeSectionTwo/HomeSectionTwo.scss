@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.home-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    margin-left: 5rem;
+    width: 65rem;
+    &--info {
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em;
+      text-align: left;
+      margin-bottom: 1rem;
+      color: $color-black;
+    }
+    &--title {
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 5.2rem;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $color-lightblue;
+    }
+
+    &--desc {
+      font-size: 2.3rem;
+      font-weight: 500;
+      line-height: 3rem;
+      letter-spacing: 0.02em;
+      text-align: left;
+      margin: 3rem 0;
+      color: $color-black;
+    }
+
+    &--btn {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__bottom {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: -10rem;
+    margin-bottom: 5rem;
+    color: $color-black;
+  }
+}

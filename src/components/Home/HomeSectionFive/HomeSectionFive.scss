@@ -1,0 +1,30 @@
+.home-five {
+  margin: 10rem;
+
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-family: Sofia Pro;
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 7.8rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: Sofia Pro;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.1rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 5rem 25%;
+  }
+}

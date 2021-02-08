@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Sofia Pro";
+  src: local("Sofia Pro"),
+    url("./assets/fonts/Sofia\ Pro\ Regular.ttf") format("truetype");
+}
+
+@import "./styles/base";
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/animations";

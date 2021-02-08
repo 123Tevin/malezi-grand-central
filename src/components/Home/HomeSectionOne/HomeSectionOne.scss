@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+.home-one {
+  background-image: url("../../../assets/images/home-one.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+  left: -1px;
+  top: 0px;
+  border-radius: 0px;
+
+  &__title {
+    font-family: Sofia Pro;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 13rem;
+    letter-spacing: 0.02em;
+    color: $color-lightblue;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: Sofia Pro;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7rem;
+    letter-spacing: 0.02em;
+    color: $color-lightblue;
+    text-align: center;
+  }
+}

@@ -1,0 +1,111 @@
+@import "../../../styles/variables";
+
+.home-six {
+  margin: 10rem;
+
+  &__quote-cardWrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__quote-card {
+    flex: 0 0 22%;
+  }
+
+  &__quote {
+    position: relative;
+    height: 13rem;
+    margin-top: 2rem;
+
+    &--title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 3.2rem;
+      letter-spacing: 0.02em;
+      color: $color-black;
+    }
+    &--quoteIcon {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &--shapeIcon {
+      position: absolute;
+      top: -2rem;
+      left: 2rem;
+    }
+    &--title {
+      position: absolute;
+      top: 8rem;
+      left: 2rem;
+    }
+    &--line {
+      position: absolute;
+      top: 11rem;
+      left: 2.5rem;
+    }
+
+    &--desc {
+    }
+  }
+
+  &__info {
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 3.1rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 6rem;
+    margin-left: 2rem;
+  }
+
+  &__user {
+    margin-left: 2rem;
+
+    &--pic {
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+    }
+    &--name {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 3.2rem;
+      letter-spacing: 0.02em;
+      color: $color-black;
+    }
+    &--position {
+      font-size: 2.3rem;
+      font-weight: 400;
+      line-height: 3.1rem;
+      letter-spacing: 0.02em;
+      color: #c4c4c4;
+    }
+    &--company {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 3.2rem;
+      letter-spacing: 0.02em;
+      color: gray;
+    }
+  }
+
+  &__title {
+    font-family: Sofia Pro;
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 7.8rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: Sofia Pro;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.1rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 5rem 30%;
+  }
+}
