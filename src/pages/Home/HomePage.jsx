@@ -19,7 +19,7 @@ function HomePage() {
       <HomeSectionFive />
       <HomeSectionSix />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

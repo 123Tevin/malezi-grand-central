@@ -1,21 +1,43 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
+
 .home-two {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10rem 0;
+  margin: 10rem 20%;
+
+  @include respond(tablet-large) {
+    margin: -8rem 10% 5rem 10%;
+  }
+
+  &__line {
+    @include respond(tablet-large) {
+      display: none;
+    }
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
+
+    @include respond(tablet-large) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__right {
     margin-left: 5rem;
     width: 65rem;
+
+    @include respond(tablet-large) {
+      margin-left: 0;
+      width: unset;
+    }
     &--info {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       font-weight: 700;
       line-height: 2.5rem;
       letter-spacing: 0.02em;
@@ -24,16 +46,20 @@
       color: $color-black;
     }
     &--title {
-      font-size: 3.6rem;
+      font-size: 3rem;
       font-weight: 900;
       line-height: 5.2rem;
       letter-spacing: 0em;
       text-align: left;
       color: $color-lightblue;
+
+      @include respond(tablet-large) {
+        font-size: 2.5rem;
+      }
     }
 
     &--desc {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 500;
       line-height: 3rem;
       letter-spacing: 0.02em;
@@ -45,6 +71,10 @@
     &--btn {
       border: none;
       outline: none;
+      
+      @include respond(tablet-large) {
+        width: 10rem;
+      }
     }
   }
 
@@ -58,5 +88,11 @@
     margin-left: -10rem;
     margin-bottom: 5rem;
     color: $color-black;
+
+    @include respond(tablet-large) {
+      width: 100%;
+      margin-left: unset;
+      text-align: left;
+    }
   }
 }

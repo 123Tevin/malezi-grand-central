@@ -3,6 +3,8 @@ import { ReactComponent as ImageThree } from "../../../assets/icons/imageThree.s
 import { ReactComponent as LineTwo } from "../../../assets/images/line2.svg";
 import { ReactComponent as BtnTwo } from "../../../assets/icons/btn2.svg";
 
+import { Link } from "react-router-dom";
+
 import "./HomeSectionThree.scss";
 
 function HomeSectionThree() {
@@ -18,7 +20,10 @@ function HomeSectionThree() {
         </h1>
         <div className="home-three--images">
           <div className="home-three--images__left">
-            <LineTwo />
+            <div className="disapper">
+              <LineTwo />
+            </div>
+
             <ImageThree />
           </div>
           <div className="home-three--images__right">
@@ -32,9 +37,9 @@ function HomeSectionThree() {
             MORE ROUNDED LEARNING, WE ARE PREPARING CHILDREN FOR PROFESSIONS
             THAT ARE YET TO BE INVENTED.
           </p>
-          <button className="home-three--btn">
+          <Link to="/pack" className="home-three--btn">
             <BtnTwo />
-          </button>
+          </Link>
         </div>
         <p className="home-three--descTwo">
           We work throughout Africa providing education solutions for

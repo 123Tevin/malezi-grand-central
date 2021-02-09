@@ -1,13 +1,29 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .home-fourWrapper {
   display: flex;
   justify-content: center;
-  margin: 20rem 0;
+  margin: 10rem 20%;
+
+  @include respond(laptop) {
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5rem 10% 15rem 10%;
+  }
 }
 .home-four {
   width: 70%;
   min-width: 120rem;
+  max-width: 130rem;
+
+  @include respond(laptop) {
+    width: unset;
+    max-width: unset;
+    min-width: unset;
+  }
+
   &--images {
     position: relative;
     display: flex;
@@ -15,37 +31,69 @@
       position: absolute;
       bottom: 0;
       z-index: 100;
+      left: -4rem;
+
+      @include respond(laptop) {
+        display: none;
+      }
     }
     &__right {
-      margin-left: 23rem;
+      .disapper {
+        @include respond(laptop) {
+          display: none;
+        }
+      }
+
+      & svg {
+        @include respond(laptop) {
+          width: 100%;
+          min-height: 20rem;
+        }
+      }
     }
   }
   &--infoOne {
-    font-size: 64px;
+    font-size: 5.5rem;
     font-style: normal;
     font-weight: 999;
-    line-height: 77px;
+    line-height: 6rem;
     letter-spacing: 0.02em;
     color: $color-green;
     margin-left: 50%;
     text-align: center;
+
+    @include respond(laptop) {
+      margin-left: unset;
+      font-size: 4rem;
+    }
   }
   &--title {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 4.2rem;
     letter-spacing: 0.02em;
     color: $color-black;
     text-align: center;
     margin-left: 50%;
+
+    @include respond(laptop) {
+      margin-left: unset;
+      font-size: 2rem;
+    }
   }
   &--infoTwo {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 4.2rem;
     letter-spacing: 0.02em;
     color: $color-black;
     margin-left: 50%;
+
+    @include respond(laptop) {
+      margin-left: unset;
+      text-align: center;
+      margin: 1rem 0;
+    }
   }
   &--descOne {
     font-size: 1.7rem;
@@ -56,6 +104,10 @@
     margin-left: 10rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    @include respond(laptop) {
+      margin-left: unset;
+      text-align: center;
+    }
   }
   &--descTwo {
     font-size: 1.6rem;
@@ -63,6 +115,11 @@
     line-height: 2.2rem;
     letter-spacing: 0.02em;
     margin-left: 50%;
+
+    @include respond(laptop) {
+      margin-left: unset;
+      text-align: center;
+    }
   }
   &--btn {
     outline: none;
@@ -72,5 +129,11 @@
     display: flex;
     align-items: center;
     margin-left: calc(50% - 35rem);
+
+    @include respond(laptop) {
+      flex-direction: column;
+      margin-left: unset;
+      text-align: center;
+    }
   }
 }

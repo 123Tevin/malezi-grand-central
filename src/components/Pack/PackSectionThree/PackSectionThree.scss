@@ -1,0 +1,28 @@
+.pack-three {
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  &__down {
+    margin: 2rem 0;
+  }
+
+  &__title {
+    font-family: Sofia Pro;
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 7.8rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}

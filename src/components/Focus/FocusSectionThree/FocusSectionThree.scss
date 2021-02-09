@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.focus-three {
+  margin: 0 20%;
+  margin-bottom: 5rem;
+  color: $color-black;
+
+  @include respond(mobile-medium) {
+    margin: 0 10%;
+  }
+  &__top {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    &--left {
+      margin-left: -10%;
+
+      & svg {
+        width: 5rem;
+      }
+
+      @include respond(laptop-small) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+
+    @include respond(laptop-small) {
+      text-align: center;
+    }
+  }
+
+  &__information {
+    margin-bottom: 3rem;
+    &--info {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      letter-spacing: 0.02em;
+      @include respond(laptop-small) {
+        text-align: center;
+      }
+    }
+    &--desc {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 4.3rem;
+      letter-spacing: 0.02em;
+      @include respond(laptop-small) {
+        text-align: center;
+      }
+    }
+  }
+}

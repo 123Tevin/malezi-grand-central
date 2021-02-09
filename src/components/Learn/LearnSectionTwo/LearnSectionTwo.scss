@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.learn-two {
+  margin: 0 22%;
+  margin-bottom: 5rem;
+  margin-top: 20rem;
+  color: $color-black;
+
+  @include respond(laptop-small) {
+    margin: 10rem 5%;
+  }
+  &__top {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    &--left {
+      margin-left: -10%;
+
+      @include respond(laptop-small) {
+        margin-left: unset;
+        text-align: center;
+      }
+
+      & svg {
+        width: 5rem;
+
+        @include respond(laptop-small) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+
+    @include respond(laptop-small) {
+      text-align: center;
+      margin-left: unset;
+    }
+  }
+
+  &__information {
+    margin-bottom: 5rem;
+    &--desc {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 4.9rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+      @include respond(laptop-small) {
+        text-align: center;
+      }
+    }
+  }
+}

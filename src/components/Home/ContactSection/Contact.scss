@@ -1,30 +1,52 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .contact {
-  margin: 10rem;
+  margin: 10rem 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include respond(laptop-large) {
+    margin: 10rem 10%;
+  }
+
+  @include respond(laptop) {
+    margin: 10rem 2%;
+  }
+
   &__title {
-    font-size: 5.4rem;
+    font-size: 4rem;
     font-weight: 900;
     line-height: 7.8rem;
     letter-spacing: 0.02em;
+    color: $color-black;
   }
 
   &__desc {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 3.1rem;
     letter-spacing: 0.02em;
-    margin: 3rem 0;
+    margin: 3rem 20%;
+
+    @include respond(laptop-large) {
+      text-align: center;
+    }
+
+    @include respond(tablet) {
+      margin: 3rem 5%;
+    }
   }
 
   &__lineIcon {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
+
+    @include respond(laptop-large) {
+      display: none;
+    }
   }
 
   &__info {
@@ -32,18 +54,27 @@
     justify-content: space-between;
     width: 80%;
     align-items: center;
+
+    @include respond(laptop-large) {
+      flex-direction: column;
+    }
   }
 
   &__leftWrapper {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
+
+    @include respond(laptop-large) {
+      text-align: center;
+    }
   }
   &__left {
+    margin-right: 4rem;
     &--left {
       margin-right: 2rem;
       & h3 {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         font-weight: 700;
         line-height: 2.9rem;
         letter-spacing: 0.02em;
@@ -72,6 +103,11 @@
       align-items: center;
       margin-bottom: 2rem;
 
+      @include respond(tablet) {
+        width: 100%;
+        flex-direction: column;
+      }
+
       & input[type="text"] {
         font-size: 2.1rem;
         font-weight: 500;
@@ -89,6 +125,10 @@
       justify-content: space-between;
       align-items: center;
 
+      @include respond(tablet) {
+        flex-direction: column;
+      }
+
       & input[type="checkbox"] {
         width: 2rem;
         height: 2rem;
@@ -99,6 +139,10 @@
         font-weight: 500;
         line-height: 2rem;
         letter-spacing: 0.02em;
+
+        @include respond(tablet) {
+          margin: 2rem 0;
+        }
       }
 
       & button {

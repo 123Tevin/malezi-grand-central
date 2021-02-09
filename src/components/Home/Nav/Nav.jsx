@@ -1,5 +1,7 @@
 import "./Nav.scss";
 
+import { Link } from "react-router-dom";
+
 // import icons
 import { ReactComponent as LogoIcon } from "../../../assets/icons/Logo.svg";
 import { ReactComponent as MenuIcon } from "../../../assets/icons/Humberger.svg";
@@ -10,9 +12,9 @@ function Nav() {
       <div className="nav__menu">
         <MenuIcon />
       </div>
-      <div className="nav__logo">
+      <Link to="/" className="nav__logo">
         <LogoIcon />
-      </div>
+      </Link>
     </div>
   );
 }

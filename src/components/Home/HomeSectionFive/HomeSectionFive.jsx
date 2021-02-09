@@ -1,16 +1,16 @@
 import "./HomeSectionFive.scss";
 
-import cardOne from "../../../assets/icons/card1.svg";
-import cardTwo from "../../../assets/icons/card2.svg";
-import cardThree from "../../../assets/icons/card3.svg";
-import cardFour from "../../../assets/icons/card4.svg";
-import cardFive from "../../../assets/icons/card5.svg";
-import cardSix from "../../../assets/icons/card6.svg";
+import cardOne from "../../../assets/icons/image4.jpg";
+import cardTwo from "../../../assets/icons/image5.jpg";
+import cardThree from "../../../assets/icons/image6.jpg";
+import cardFour from "../../../assets/icons/image7.jpg";
+import cardFive from "../../../assets/icons/image8.jpg";
+import cardSix from "../../../assets/icons/image9.png";
 
 function HomeSectionFive() {
   return (
     <div className="home-five">
-      <h3 className="home-five__title">Our Solutions</h3>
+      <h3 className="home-five__title">OUR SOLUTIONS</h3>
       <p className="home-five__desc">
         We complement and extend the current education system which expects
         children to physically go to a school with the ability to bring the
@@ -19,14 +19,32 @@ function HomeSectionFive() {
         opportunities at any time and wherever they may be.{" "}
       </p>
       <div className="home-five__card-wrapper">
-        <img src={cardOne} alt="" />
-        <img src={cardTwo} alt="" />
-        <img src={cardThree} alt="" />
+        <div className="home-five__card">
+          <img src={cardOne} alt="card one" />
+          <p>MsingPACK</p>
+        </div>
+        <div className="home-five__card">
+          <img src={cardTwo} alt="card one" />
+          <p>Learn At Home Nigeria</p>
+        </div>
+        <div className="home-five__card">
+          <img src={cardThree} alt="card one" />
+          <p>Malezi Tutor</p>
+        </div>
       </div>
       <div className="home-five__card-wrapper">
-        <img src={cardFour} alt="" />
-        <img src={cardFive} alt="" />
-        <img src={cardSix} alt="" />
+        <div className="home-five__card">
+          <img src={cardFour} alt="card one" />
+          <p>MORE Africa Series</p>
+        </div>
+        <div className="home-five__card">
+          <img src={cardFive} alt="card one" />
+          <p>Chemsha Bongo</p>
+        </div>
+        <div className="home-five__card">
+          <img src={cardTwo} alt="card one" />
+          <p>Malezi Enterprise</p>
+        </div>
       </div>
     </div>
   );

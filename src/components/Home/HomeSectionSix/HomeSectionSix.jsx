@@ -17,7 +17,7 @@ function HomeSectionSix() {
       <p className="home-six__desc">
         In the interest of transparency, we never use incentives to influence
         these reviews; and because we follow strict privacy policies, we never
-        link to a review unless it has been shared publicly by the reviewer..
+        link to a review unless it has been shared publicly by the reviewer.
       </p>
       <div className="home-six__quote-cardWrapper">
         <div className="home-six__quote-card">
@@ -57,24 +57,25 @@ function HomeSectionSix() {
             <div className="home-six__quote--shapeIcon">
               <ShapeTwo />
             </div>
-            <h3 className="home-six__quote--title">PUBLIC INTERNATIONAL</h3>
+            <h3 className="home-six__quote--title">MADNESS HOUSING INC</h3>
             <div className="home-six__quote--line">
               <Line />
             </div>
           </div>
           <p className="home-six__info">
-            In the interest of transparency, we never use incentives to
-            influence these reviews; and because we follow strict privacy
-            policies, we never link to a review unless it has bee IT investments
-            and help them maintain a competitive edge. In the complex and
-            rapidly changing world of of our partnership with Malezi
+            With what i know, Malezi single handedly changed the face of
+            anyone’s home lerning fantasy—something a lot of people didn’t
+            notice and maybe still don’t. He brought the story down to a human
+            level, dispensing with the cliché archetypes of princes, kings, and
+            evil sorcerers. Reading online stuff was like reading Vietnam War
+            fiction on peyot. Good guys..
           </p>
 
           <div className="home-six__user">
             <img src={userTwo} alt="" className="home-six__user--pic" />
-            <h4 className="home-six__user--name">Marsha Kilua</h4>
-            <p className="home-six__user--position">Marketing Lead</p>
-            <h3 className="home-six__user--company">PUBLIC INTERNATIONAL</h3>
+            <h4 className="home-six__user--name">Martin Kibet</h4>
+            <p className="home-six__user--position">Head of Africa</p>
+            <h3 className="home-six__user--company">MADNESS HOUSING INC</h3>
           </div>
         </div>
 
@@ -86,7 +87,7 @@ function HomeSectionSix() {
             <div className="home-six__quote--shapeIcon">
               <ShapeThree />
             </div>
-            <h3 className="home-six__quote--title">PUBLIC INTERNATIONAL</h3>
+            <h3 className="home-six__quote--title">THE BRAND</h3>
             <div className="home-six__quote--line">
               <Line />
             </div>
@@ -94,16 +95,17 @@ function HomeSectionSix() {
           <p className="home-six__info">
             In the interest of transparency, we never use incentives to
             influence these reviews; and because we follow strict privacy
-            policies, we never link to a review unless it has bee IT investments
-            and help them maintain a competitive edge. In the complex and
-            rapidly changing world of of our partnership with Malezi
+            policies, we never link to a review unless it has been shared
+            publicly by the reviewer. We strive to a help them maintain a
+            competitive edge. In the complex and rapidly changing world of of
+            our partnership with Malezii
           </p>
 
           <div className="home-six__user">
             <img src={userThree} alt="" className="home-six__user--pic" />
-            <h4 className="home-six__user--name">Marsha Kilua</h4>
-            <p className="home-six__user--position">Marketing Lead</p>
-            <h3 className="home-six__user--company">PUBLIC INTERNATIONAL</h3>
+            <h4 className="home-six__user--name">Agness Anviaraa</h4>
+            <p className="home-six__user--position">Breakthrough Manager</p>
+            <h3 className="home-six__user--company">LINK THE PAZZLE</h3>
           </div>
         </div>
       </div>

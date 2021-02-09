@@ -3,6 +3,8 @@ import { ReactComponent as ImageFive } from "../../../assets/icons/img5.svg";
 import { ReactComponent as LineThree } from "../../../assets/icons/line3.svg";
 import { ReactComponent as BtnThree } from "../../../assets/icons/btn3.svg";
 
+import { Link } from "react-router-dom";
+
 import "./HomeSectionFour.scss";
 
 function HomeSectionFour() {
@@ -21,15 +23,17 @@ function HomeSectionFour() {
             <ImageFive />
           </div>
           <div className="home-four--images__right">
-            <LineThree />
+            <div className="disapper">
+              <LineThree />
+            </div>
             <ImageFour />
           </div>
         </div>
         <h3 className="home-four--infoTwo">WE APPLY</h3>
         <div className="home-four--btnWrapper">
-          <button className="home-four--btn">
+          <Link to="/learn" className="home-four--btn">
             <BtnThree />
-          </button>
+          </Link>
           <p className="home-four--descOne">
             SCIENCE AND TECHNOLOGY TO SUPPORT CAREGIVERS TO EXPAND THE HORIZONS
             OF CHILDHOOD EXPERIENCES..

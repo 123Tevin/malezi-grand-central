@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.focus-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 20%;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include respond(laptop-small) {
+      flex-direction: column;
+    }
+  }
+
+  &__right {
+    flex: 0 0 60%;
+    @include respond(laptop-small) {
+      margin-top: 2rem;
+    }
+    & p {
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 4.6rem;
+      letter-spacing: 0em;
+      color: $color-black;
+      text-decoration: underline;
+
+      @include respond(laptop-small) {
+        text-align: center;
+      }
+    }
+  }
+}

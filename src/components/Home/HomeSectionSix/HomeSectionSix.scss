@@ -1,15 +1,35 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .home-six {
-  margin: 10rem;
+  margin: 10rem 20%;
+
+  @include respond(laptop-large) {
+    margin: 10rem 10%;
+  }
+
+  @include respond(laptop) {
+    margin: 10rem 2%;
+  }
 
   &__quote-cardWrapper {
     display: flex;
     justify-content: space-around;
+
+    @include respond(laptop) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__quote-card {
-    flex: 0 0 22%;
+    flex: 0 0 25%;
+
+    @include respond(laptop) {
+      margin: 6rem 0;
+    }
   }
 
   &__quote {
@@ -18,7 +38,7 @@
     margin-top: 2rem;
 
     &--title {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 700;
       line-height: 3.2rem;
       letter-spacing: 0.02em;
@@ -37,7 +57,6 @@
     &--title {
       position: absolute;
       top: 8rem;
-      left: 2rem;
     }
     &--line {
       position: absolute;
@@ -50,7 +69,7 @@
   }
 
   &__info {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 3.1rem;
     letter-spacing: 0.02em;
@@ -66,21 +85,21 @@
       margin-bottom: 2rem;
     }
     &--name {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 700;
       line-height: 3.2rem;
       letter-spacing: 0.02em;
       color: $color-black;
     }
     &--position {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 400;
       line-height: 3.1rem;
       letter-spacing: 0.02em;
       color: #c4c4c4;
     }
     &--company {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 700;
       line-height: 3.2rem;
       letter-spacing: 0.02em;
@@ -90,7 +109,7 @@
 
   &__title {
     font-family: Sofia Pro;
-    font-size: 5.4rem;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 900;
     line-height: 7.8rem;
@@ -100,12 +119,20 @@
 
   &__desc {
     font-family: Sofia Pro;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 3.1rem;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 5rem 30%;
+    margin: 5rem 20%;
+
+    @include respond(laptop-large) {
+      margin: 5rem 15%;
+    }
+
+    @include respond(laptop) {
+      margin: 5rem 8%;
+    }
   }
 }
