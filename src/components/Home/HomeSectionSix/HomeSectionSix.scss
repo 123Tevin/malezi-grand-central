@@ -2,7 +2,8 @@
 @import "../../../styles/mixins";
 
 .home-six {
-  margin: 10rem 20%;
+  padding: 10rem 20%;
+  background-color: #f8ffff;
 
   @include respond(laptop-large) {
     margin: 10rem 10%;
@@ -28,7 +29,11 @@
     flex: 0 0 25%;
 
     @include respond(laptop) {
-      margin: 6rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15rem;
     }
   }
 
@@ -36,6 +41,12 @@
     position: relative;
     height: 13rem;
     margin-top: 2rem;
+
+    @include respond(laptop) {
+      position: unset;
+      height: unset;
+      margin-top: unset;
+    }
 
     &--title {
       font-size: 2rem;
@@ -48,20 +59,41 @@
       position: absolute;
       top: 0;
       left: 0;
+      @include respond(laptop) {
+        display: none;
+        position: unset;
+        top: unset;
+        left: unset;
+      }
     }
     &--shapeIcon {
       position: absolute;
       top: -2rem;
       left: 2rem;
+      @include respond(laptop) {
+        position: unset;
+        top: unset;
+        left: unset;
+      }
     }
     &--title {
       position: absolute;
       top: 8rem;
+      @include respond(laptop) {
+        position: unset;
+        top: unset;
+        left: unset;
+      }
     }
     &--line {
       position: absolute;
       top: 11rem;
       left: 2.5rem;
+      @include respond(laptop) {
+        position: unset;
+        top: unset;
+        left: unset;
+      }
     }
 
     &--desc {
@@ -73,8 +105,20 @@
     font-weight: 400;
     line-height: 3.1rem;
     letter-spacing: 0.02em;
-    margin-bottom: 6rem;
+    height: 60rem;
     margin-left: 2rem;
+
+    @include respond(laptop) {
+      height: 20rem;
+    }
+
+    @include respond(tablet-large) {
+      height: 30rem;
+    }
+
+    @include respond(mobile-medium) {
+      height: 40rem;
+    }
   }
 
   &__user {

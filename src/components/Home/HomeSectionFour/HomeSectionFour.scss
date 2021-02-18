@@ -38,6 +38,11 @@
       }
     }
     &__right {
+      @include respond(laptop) {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+      }
       .disapper {
         @include respond(laptop) {
           display: none;
@@ -46,7 +51,6 @@
 
       & svg {
         @include respond(laptop) {
-          width: 100%;
           min-height: 20rem;
         }
       }
@@ -124,6 +128,16 @@
   &--btn {
     outline: none;
     border: none;
+
+    @include respond(laptop) {
+      margin-bottom: 2rem;
+    }
+
+    & svg {
+      @include respond(laptop) {
+        width: 20rem;
+      }
+    }
   }
   &--btnWrapper {
     display: flex;
@@ -134,6 +148,49 @@
       flex-direction: column;
       margin-left: unset;
       text-align: center;
+    }
+  }
+}
+
+.home-four__back-circleWrapper {
+  position: relative;
+}
+
+.home-four__back-circle {
+  height: 80rem;
+  width: 80rem;
+  background-color: #f6ffee;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  z-index: -100;
+  @include respond(laptop) {
+    left: 20%;
+    top: 8rem;
+    height: 60rem;
+    width: 60rem;
+  }
+  @include respond(tablet) {
+    left: 8rem;
+    top: 30rem;
+    height: 70rem;
+    width: 70rem;
+    overflow: hidden;
+  }
+}
+
+.interchange__four {
+  &--large {
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
+  &--small {
+    display: none;
+    @include respond(tablet) {
+      display: flex;
+      justify-content: center;
     }
   }
 }

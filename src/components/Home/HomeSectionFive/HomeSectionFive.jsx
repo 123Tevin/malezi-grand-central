@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./HomeSectionFive.scss";
 
 import cardOne from "../../../assets/icons/image4.jpg";
@@ -19,32 +21,50 @@ function HomeSectionFive() {
         opportunities at any time and wherever they may be.{" "}
       </p>
       <div className="home-five__card-wrapper">
-        <div className="home-five__card">
-          <img src={cardOne} alt="card one" />
-          <p>MsingPACK</p>
-        </div>
-        <div className="home-five__card">
-          <img src={cardTwo} alt="card one" />
-          <p>Learn At Home Nigeria</p>
-        </div>
-        <div className="home-five__card">
-          <img src={cardThree} alt="card one" />
-          <p>Malezi Tutor</p>
-        </div>
+        <Link to="/pack" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardOne} alt="card one" />
+            <p>MsingiPACK</p>
+          </div>
+          <p className="home-five__overlay">MsingiPACK</p>
+        </Link>
+        <Link to="/learn" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardTwo} alt="card one" />
+            <p>Learn At Home Nigeria</p>
+          </div>
+          <p className="home-five__overlay">Learn At Home Nigeria</p>
+        </Link>
+        <Link to="/tutor" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardThree} alt="card one" />
+            <p>Malezi Tutor</p>
+          </div>
+          <p className="home-five__overlay">Malezi Tutor</p>
+        </Link>
       </div>
       <div className="home-five__card-wrapper">
-        <div className="home-five__card">
-          <img src={cardFour} alt="card one" />
-          <p>MORE Africa Series</p>
-        </div>
-        <div className="home-five__card">
-          <img src={cardFive} alt="card one" />
-          <p>Chemsha Bongo</p>
-        </div>
-        <div className="home-five__card">
-          <img src={cardTwo} alt="card one" />
-          <p>Malezi Enterprise</p>
-        </div>
+        <Link to="/more" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardFour} alt="card one" />
+            <p>MORE Africa Series</p>
+          </div>
+          <p className="home-five__overlay">MORE Africa Series</p>
+        </Link>
+        <Link to="/bongo" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardFive} alt="card one" />
+            <p>Chemsha Bongo</p>
+          </div>
+          <p className="home-five__overlay">Chemsha Bongo</p>
+        </Link>
+        <Link to="/enterprise" className="home-five__overlay--wrapper">
+          <div className="home-five__card">
+            <img src={cardTwo} alt="card one" />
+            <p>Malezi Enterprise</p>
+          </div>
+          <p className="home-five__overlay">Malezi Enterprise</p>
+        </Link>
       </div>
     </div>
   );

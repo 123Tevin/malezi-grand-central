@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50rem;
 
   @include respond(laptop-large) {
     margin: 10rem 10%;
@@ -72,7 +73,7 @@
   &__left {
     margin-right: 4rem;
     &--left {
-      margin-right: 2rem;
+      width: 22rem;
       & h3 {
         font-size: 1.8rem;
         font-weight: 700;
@@ -101,7 +102,7 @@
       justify-content: space-between;
       width: 100%;
       align-items: center;
-      margin-bottom: 2rem;
+      margin-bottom: 3.5rem;
 
       @include respond(tablet) {
         width: 100%;
@@ -118,6 +119,7 @@
         margin-right: 2rem;
         border: none;
         border-bottom: 1px solid gray;
+        outline: none;
       }
     }
     &--bottom {
@@ -148,7 +150,34 @@
       & button {
         border: none;
         outline: none;
+        padding: 1rem 5rem;
+        border-radius: 0.6rem;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+        background: #78b521;
+        cursor: pointer;
       }
     }
+  }
+}
+
+.contact__back-circleWrapper {
+  position: relative;
+}
+
+.contact__back-circle {
+  height: 80rem;
+  width: 80rem;
+  background-color: #f6ffee;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  z-index: -100;
+  @include respond(laptop) {
+    left: 20%;
+    top: 20rem;
+    height: 60rem;
+    width: 60rem;
   }
 }

@@ -71,7 +71,17 @@
     &--btn {
       border: none;
       outline: none;
-      
+
+      @include respond(laptop) {
+        margin-bottom: 2rem;
+      }
+
+      & svg {
+        @include respond(laptop) {
+          width: 20rem;
+        }
+      }
+
       @include respond(tablet-large) {
         width: 10rem;
       }

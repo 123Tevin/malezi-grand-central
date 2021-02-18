@@ -157,3 +157,44 @@
     }
   }
 }
+
+.home-three__back-circleWrapper {
+  position: relative;
+}
+
+.home-three__back-circle {
+  height: 80rem;
+  width: 80rem;
+  background-color: #eaffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  z-index: -100;
+  @include respond(laptop) {
+    left: 20%;
+    height: 60rem;
+    width: 60rem;
+  }
+  @include respond(tablet) {
+    left: 10rem;
+    top: 30rem;
+    height: 70rem;
+    width: 70rem;
+  }
+}
+
+.interchange__three {
+  &--large {
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
+  &--small {
+    display: none;
+    @include respond(tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

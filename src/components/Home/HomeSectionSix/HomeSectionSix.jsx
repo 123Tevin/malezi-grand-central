@@ -68,7 +68,7 @@ function HomeSectionSix() {
             notice and maybe still don’t. He brought the story down to a human
             level, dispensing with the cliché archetypes of princes, kings, and
             evil sorcerers. Reading online stuff was like reading Vietnam War
-            fiction on peyot. Good guys..
+            fiction on peyot. Good guys.
           </p>
 
           <div className="home-six__user">

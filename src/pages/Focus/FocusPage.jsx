@@ -1,9 +1,9 @@
 import FocusSectionOne from "../../components/Focus/FocusSectionOne/FocusSectionOne";
-import FocusSectionThree from "../../components/Focus/FocusSectionThree/FocusSectionThree";
 import FocusSectionTwo from "../../components/Focus/FocusSectionTwo/FocusSectionTwo";
+import FocusSectionThree from "../../components/Focus/FocusSectionThree/FocusSectionThree";
 import Footer from "../../components/Home/Footer/Footer";
-import HomeSectionFive from "../../components/Home/HomeSectionFive/HomeSectionFive";
 import Nav from "../../components/Home/Nav/Nav";
+import Solutions from "../../components/Shared/Solutions/Solutions";
 
 function FocusPage() {
   return (
@@ -12,7 +12,7 @@ function FocusPage() {
       <FocusSectionOne />
       <FocusSectionTwo />
       <FocusSectionThree />
-      <HomeSectionFive />
+      <Solutions />
       <Footer />
     </div>
   );

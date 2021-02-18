@@ -1,15 +1,38 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
-.home-five {
-  margin: 10rem 20%;
+.solution {
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @include respond(laptop-large) {
-    margin: 10rem 10%;
+  &__left,
+  &__right {
+    & svg {
+      width: 2.5rem;
+      cursor: pointer;
+    }
+
+    @include respond(laptop) {
+      display: none;
+    }
   }
 
-  @include respond(laptop) {
-    margin: 10rem 2%;
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  &__down {
+    margin: 2rem 0;
+
+    & svg {
+      width: 2.5rem;
+    }
   }
 
   &__card-wrapper {
@@ -33,6 +56,7 @@
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    height: 110%;
   }
 
   &__overlay {
@@ -52,7 +76,6 @@
     left: 0;
     opacity: 0.8;
     transition-duration: 0.5s;
-    text-decoration: none;
   }
 
   &__card {
@@ -81,7 +104,7 @@
 
   &__title {
     font-family: Sofia Pro;
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 900;
     line-height: 7.8rem;
@@ -109,10 +132,33 @@
   }
 }
 
-.home-five__overlay--wrapper:hover .home-five__overlay {
-  top: 0;
+.solution__overlay--wrapper:hover .solution__overlay {
+  transform: translateY(-106.5%);
 }
 
-.home-five__overlay--wrapper:hover .home-five__card > p {
+.solution__overlay--wrapper:hover .solution__card > p {
   display: none;
+}
+
+.solution__back-circleWrapper {
+  position: relative;
+  height: 90rem;
+  overflow-y: hidden;
+
+  @include respond(laptop) {
+    height: unset;
+  }
+}
+
+.solution__back-circle {
+  height: 120rem;
+  width: 120rem;
+  background-color: #f6ffee;
+  border-radius: 50%;
+  position: absolute;
+  top: 40rem;
+  z-index: -100;
+  @include respond(laptop) {
+    display: none;
+  }
 }
