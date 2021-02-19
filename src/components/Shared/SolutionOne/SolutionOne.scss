@@ -7,11 +7,14 @@
   height: 80rem;
   background-position: center;
   position: relative;
+  z-index: -1;
 
   &__img {
     position: absolute;
     bottom: -14.6rem;
-    right: 45%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 
     @include respond(laptop-small) {
       display: none;
@@ -42,4 +45,9 @@
       border-bottom-left-radius: 2rem;
     }
   }
+}
+
+.dfoot {
+  text-align: center;
+  font-size: 1.8rem;
 }

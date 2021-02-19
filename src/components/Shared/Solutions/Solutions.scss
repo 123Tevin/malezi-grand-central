@@ -50,32 +50,28 @@
   }
 
   &__overlay--wrapper {
-    width: 30rem;
     position: relative;
-    overflow: hidden;
+    height: 40rem;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
-    height: 110%;
   }
 
   &__overlay {
     width: 100%;
-    height: calc(100% - 2rem);
+    height: 20rem;
     font-size: 2.3rem;
     font-weight: 700;
-    z-index: 1;
-    background-color: rgba(192, 255, 255, 0.83);
-    border-radius: 2rem;
+    background-color: rgb(192, 255, 255);
+    border-radius: 0 0 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 0;
-    opacity: 0.8;
     transition-duration: 0.5s;
+    text-decoration: none;
   }
 
   &__card {
@@ -87,29 +83,13 @@
     & img {
       width: 100%;
     }
-
-    & p {
-      align-self: stretch;
-      margin-top: -2rem;
-      background-color: #c4c4c4;
-      padding: 5rem 0;
-      text-align: center;
-      color: $color-black;
-      font-size: 2rem;
-      font-weight: 700;
-      border-bottom-right-radius: 2rem;
-      border-bottom-left-radius: 2rem;
-    }
   }
 
   &__title {
-    font-family: Sofia Pro;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 7.8rem;
-    letter-spacing: 0.02em;
+    font-size: 5rem;
+    font-weight: normal;
     text-align: center;
+    color: #333;
   }
 
   &__desc {
@@ -133,11 +113,10 @@
 }
 
 .solution__overlay--wrapper:hover .solution__overlay {
-  transform: translateY(-106.5%);
-}
-
-.solution__overlay--wrapper:hover .solution__card > p {
-  display: none;
+  top: 0;
+  opacity: 0.8;
+  height: 30rem;
+  border-radius: 2rem;
 }
 
 .solution__back-circleWrapper {

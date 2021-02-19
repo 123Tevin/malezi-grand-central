@@ -10,7 +10,6 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav__menu">
-        <MenuIcon />
       </div>
       <Link to="/" className="nav__logo">
         <LogoIcon />

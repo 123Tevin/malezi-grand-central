@@ -13,7 +13,6 @@ function FocusPage() {
       <FocusSectionTwo />
       <FocusSectionThree />
       <Solutions />
-      <Footer />
     </div>
   );
 }

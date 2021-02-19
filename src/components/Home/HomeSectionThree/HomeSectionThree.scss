@@ -53,10 +53,9 @@
     }
   }
   &--infoOne {
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 4.2rem;
-    letter-spacing: 0.02em;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.1;
     width: 50%;
     padding-left: 10rem;
     color: $color-lightblue;
@@ -69,12 +68,12 @@
     }
   }
   &--title {
-    font-size: 5.5rem;
+    font-size: 7rem;
     font-style: normal;
-    font-weight: 999;
-    line-height: 6rem;
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    line-height: 0.88;
     text-align: left;
+    padding: 1.5rem 0;
     width: 50%;
     padding-left: 10rem;
     color: $color-black;
@@ -87,10 +86,9 @@
     }
   }
   &--infoTwo {
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 4.2rem;
-    letter-spacing: 0.02em;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
     width: 50%;
     padding-left: 10rem;
     color: $color-black;

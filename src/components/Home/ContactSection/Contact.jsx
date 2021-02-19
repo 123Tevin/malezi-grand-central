@@ -77,6 +77,9 @@ function Contact() {
           </div>
         </div>
       </div>
+      <p style={{ fontSize: "1.8rem", textAlign: "center" }}>
+        © 2021 Malezi. All Rights Reserved
+      </p>
     </div>
   );
 }

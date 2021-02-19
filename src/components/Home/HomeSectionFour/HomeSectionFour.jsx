@@ -18,10 +18,9 @@ function HomeSectionFour() {
           <h3 className="home-four--infoOne">
             EQUIP <br /> CAREGIVERS
           </h3>
-          <h1 className="home-four--title">
-            USING TOOLS TO MAKE <br />
-            CARING EASIER
-          </h1>
+          <h4 className="home-four--title">
+            Using Tools To Make <br /> Caring Easier
+          </h4>
           <div className="home-four--images">
             <div className="home-four--images__left">
               <ImageFive />

@@ -1,4 +1,3 @@
-import Footer from "../../components/Home/Footer/Footer";
 import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
@@ -16,9 +15,12 @@ function BongoPage() {
     <div className="bongo-page">
       <Nav />
       <SolutionOne info="Chemsha Bongo" image={image} bgImage={bgImage} />
-      <SolutionTwo title="Chemsha Bongo" descs={descs} />
+      <SolutionTwo
+        title="Chemsha Bongo"
+        descs={descs}
+        link="https://play.google.com/store/apps/details?id=ke.co.malezi.chemshabongo&hl=en&gl=US"
+      />
       <Solutions />
-      <Footer />
     </div>
   );
 }

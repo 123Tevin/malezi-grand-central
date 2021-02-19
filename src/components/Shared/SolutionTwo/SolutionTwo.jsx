@@ -1,7 +1,7 @@
 import "./SolutionTwo.scss";
 import { ReactComponent as RecIcon } from "../../../assets/images/rec.svg";
 
-function SolutionTwo({ title, descs }) {
+function SolutionTwo({ title, descs, link }) {
   return (
     <div className="solution-two">
       <div className="solution-two__top">
@@ -18,6 +18,11 @@ function SolutionTwo({ title, descs }) {
           </p>
         ))}
       </div>
+      {link && (
+        <a href={link} class="r-link link text-underlined" target="_blank">
+          {`Visit ${title}`}
+        </a>
+      )}
     </div>
   );
 }

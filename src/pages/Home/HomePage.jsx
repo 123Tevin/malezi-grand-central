@@ -19,7 +19,6 @@ function HomePage() {
       <HomeSectionFive />
       <HomeSectionSix />
       <Contact />
-      <Footer />
     </div>
   );
 }

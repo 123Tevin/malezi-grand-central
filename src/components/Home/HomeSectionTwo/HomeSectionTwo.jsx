@@ -14,7 +14,7 @@ function HomeSectionTwo() {
           <ImageOne />
         </div>
         <div className="home-two__right">
-          <p className="home-two__right--info">Our Focus</p>
+          {/* <p className="home-two__right--info">Our Focus</p> */}
           <h3 className="home-two__right--title">
             OUR LATEST STORIES, RESEARCH, <br />
             AND NEWS
@@ -29,7 +29,7 @@ function HomeSectionTwo() {
           </Link>
         </div>
       </div>
-      <p className="home-two__bottom">OUR MISSIONS TO ACHIEVE OUR VISION</p>
+      <h2 className="home-two__bottom">OUR FOCUS</h2>
       <div className="home-two__line">
         <LineOne />
       </div>

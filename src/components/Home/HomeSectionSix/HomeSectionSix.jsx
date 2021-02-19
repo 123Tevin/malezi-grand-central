@@ -9,11 +9,15 @@ import { ReactComponent as ShapeThree } from "../../../assets/icons/shape3.svg";
 import userOne from "../../../assets/icons/user1.png";
 import userTwo from "../../../assets/icons/user2.png";
 import userThree from "../../../assets/icons/user3.png";
+import { ReactComponent as LineOne } from "../../../assets/images/line1.svg";
 
 function HomeSectionSix() {
   return (
     <div className="home-six">
       <h3 className="home-six__title">REVIEWS</h3>
+      <div className="home-six__line">
+        <LineOne />
+      </div>
       <p className="home-six__desc">
         In the interest of transparency, we never use incentives to influence
         these reviews; and because we follow strict privacy policies, we never

@@ -10,14 +10,13 @@
   background-position: center;
 
   &__title {
-    font-family: Sofia Pro;
-    font-size: 6.5rem;
+    font-size: 6.5em;
     font-style: normal;
-    font-weight: 900;
-    line-height: 13rem;
-    letter-spacing: 0.02em;
+    font-weight: bolder;
+    line-height: 0.9;
     color: $color-lightblue;
     text-align: center;
+    padding-top: 5rem;
 
     @include respond(tablet-large) {
       font-size: 4rem;

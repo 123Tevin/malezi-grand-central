@@ -15,9 +15,9 @@ function HomeSectionThree() {
       <div className="home-three__back-circle"></div>
       <div className="home-threeWrapper">
         <div className="home-three">
-          <h3 className="home-three--infoOne">
-            WE EQUIP/PREPARE YOUNG <br /> MINDS TO
-          </h3>
+          <h4 className="home-three--infoOne">
+            We Equip/Prepare Young <br /> Minds To
+          </h4>
           <h1 className="home-three--title">
             INVENT THE <br />
             FUTURE

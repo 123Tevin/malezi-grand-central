@@ -20,9 +20,12 @@ function LearnPage() {
         image={image}
         bgImage={bgImage}
       />
-      <SolutionTwo title="Learn At Home Nigeria" descs={descs} />
+      <SolutionTwo
+        title="Learn At Home Nigeria"
+        descs={descs}
+        link="https://learnathome.ng/"
+      />
       <Solutions />
-      <Footer />
     </div>
   );
 }

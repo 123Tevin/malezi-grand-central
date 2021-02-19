@@ -1,4 +1,3 @@
-import Footer from "../../components/Home/Footer/Footer";
 import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
@@ -16,9 +15,12 @@ function TutorPage() {
     <div className="tutor-page">
       <Nav />
       <SolutionOne info="Malezi Tutor" image={image} bgImage={bgImage} />
-      <SolutionTwo title="Malezi Tutor" descs={descs} />
+      <SolutionTwo
+        title="Malezi Tutor"
+        descs={descs}
+        link="https://tutor.malezi.co.ke/"
+      />
       <Solutions />
-      <Footer />
     </div>
   );
 }

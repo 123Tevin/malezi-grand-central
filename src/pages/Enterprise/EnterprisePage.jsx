@@ -17,7 +17,6 @@ function EnterprisePage() {
       <SolutionOne info="Malezi Enterprise" image={image} bgImage={bgImage} />
       <SolutionTwo title="Malezi Enterprise" descs={descs} />
       <Solutions />
-      <Footer />
     </div>
   );
 }

@@ -25,6 +25,11 @@
     }
   }
 
+  &__line {
+    display: flex;
+    justify-content: center;
+  }
+
   &__quote-card {
     flex: 0 0 25%;
 
@@ -101,11 +106,9 @@
   }
 
   &__info {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 400;
-    line-height: 3.1rem;
-    letter-spacing: 0.02em;
-    height: 60rem;
+    height: 40rem;
     margin-left: 2rem;
 
     @include respond(laptop) {
@@ -152,12 +155,10 @@
   }
 
   &__title {
-    font-family: Sofia Pro;
-    font-size: 4.5rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 7.8rem;
-    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+    text-align: center;
     text-align: center;
   }
 

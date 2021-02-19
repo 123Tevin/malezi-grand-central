@@ -1,5 +1,4 @@
 import Nav from "../../components/Home/Nav/Nav";
-import Footer from "../../components/Home/Footer/Footer";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 
@@ -16,10 +15,13 @@ function PackPage() {
   return (
     <div className="pack-page">
       <Nav />
-      <SolutionOne info="MsingPACK" image={cardThree} bgImage={bgImage} />
-      <SolutionTwo title="MsingPACK" descs={descs} />
+      <SolutionOne info="MsingiPACK" image={cardThree} bgImage={bgImage} />
+      <SolutionTwo
+        title="MsingiPACK"
+        descs={descs}
+        link="https://academy.msingipack.com/"
+      />
       <Solutions />
-      <Footer />
     </div>
   );
 }

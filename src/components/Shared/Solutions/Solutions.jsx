@@ -24,7 +24,6 @@ function Solutions() {
   const last = start + 3;
   const currentData = solutionData?.slice(start, last);
 
-  console.log(start);
   const previousPage = () => setStart(start - 1);
   const nextPage = () => setStart(start + 1);
 
@@ -53,7 +52,6 @@ function Solutions() {
               >
                 <div className="solution__card">
                   <img src={data.image} alt="card one" />
-                  <p>{data.title}</p>
                 </div>
                 <p className="solution__overlay">{data.title}</p>
               </Link>
@@ -66,6 +64,7 @@ function Solutions() {
           )}
         </div>
       </div>
+      <p className="dfoot">© 2021 Malezi. All Rights Reserved</p>
     </div>
   );
 }

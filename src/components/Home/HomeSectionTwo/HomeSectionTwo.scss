@@ -46,9 +46,9 @@
       color: $color-black;
     }
     &--title {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 5.2rem;
+      font-size: 3.2rem;
+      font-weight: normal;
+      line-height: 0.88;
       letter-spacing: 0em;
       text-align: left;
       color: $color-lightblue;
@@ -59,7 +59,7 @@
     }
 
     &--desc {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 500;
       line-height: 3rem;
       letter-spacing: 0.02em;
@@ -89,14 +89,10 @@
   }
 
   &__bottom {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 2.2rem;
-    letter-spacing: 0.02em;
+    font-size: 5rem;
+    font-weight: normal;
     text-align: center;
-    margin-top: 5rem;
-    margin-left: -10rem;
-    margin-bottom: 5rem;
+    margin: 15rem 0 1rem -10rem;
     color: $color-black;
 
     @include respond(tablet-large) {

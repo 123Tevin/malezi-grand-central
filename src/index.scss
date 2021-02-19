@@ -4,6 +4,11 @@
     url("./assets/fonts/Sofia\ Pro\ Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "din";
+  src: local("din"), url("./assets/fonts/DIN-Black.ttf") format("truetype");
+}
+
 @import "./styles/base";
 @import "./styles/mixins";
 @import "./styles/variables";
