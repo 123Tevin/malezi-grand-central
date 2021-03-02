@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 import { ReactComponent as ImageOne } from "../../../assets/images/img1.svg";
 import { ReactComponent as BtnOne } from "../../../assets/images/btn1.svg";
-import { ReactComponent as LineOne } from "../../../assets/images/line1.svg";
+import { ReactComponent as Triange } from "../../../assets/icons/triangle.svg";
+import { ReactComponent as LineSixIcon } from "../../../assets/icons/line6.svg";
 
 function HomeSectionTwo() {
   return (
@@ -14,7 +15,6 @@ function HomeSectionTwo() {
           <ImageOne />
         </div>
         <div className="home-two__right">
-          {/* <p className="home-two__right--info">Our Focus</p> */}
           <h3 className="home-two__right--title">
             OUR LATEST STORIES, RESEARCH, <br />
             AND NEWS
@@ -29,9 +29,13 @@ function HomeSectionTwo() {
           </Link>
         </div>
       </div>
-      <h2 className="home-two__bottom">OUR FOCUS</h2>
-      <div className="home-two__line">
-        <LineOne />
+      <h2 className="home-two__bottom">
+        <span>OUR FOCUS</span>
+      </h2>
+      <div className="lineIcon">
+        <LineSixIcon />
+        <Triange />
+        <LineSixIcon />
       </div>
     </div>
   );

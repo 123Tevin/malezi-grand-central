@@ -17,7 +17,7 @@ function Contact() {
           If you have any questions, feel free to get in touch
         </p>
 
-        <div className="contact__lineIcon">
+        <div className="lineIcon">
           <LineSixIcon />
           <Triange />
           <LineSixIcon />
@@ -66,20 +66,17 @@ function Contact() {
                 <input type="text" placeholder="Subject" />
               </div>
               <div className="contact__right--fieldController">
-                <input type="text" placeholder="Message" />
+                <textarea rows={3} type="text" placeholder="Message" ></textarea>
               </div>
               <div className="contact__right--bottom">
-                <input type="checkbox" name="updates" id="updates" />
                 <p>I would like to receive malezi updates</p>
                 <button>Submit</button>
               </div>
             </form>
+            <p className="home-footer">© 2021 Malezi. All Rights Reserved</p>
           </div>
         </div>
       </div>
-      <p style={{ fontSize: "1.8rem", textAlign: "center" }}>
-        © 2021 Malezi. All Rights Reserved
-      </p>
     </div>
   );
 }

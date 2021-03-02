@@ -2,15 +2,16 @@
 @import "../../../styles/mixins";
 
 .home-six {
-  padding: 10rem 20%;
   background-color: #f8ffff;
 
+  margin: 4rem 20%;
+
   @include respond(laptop-large) {
-    margin: 10rem 10%;
+    margin: 2rem 10%;
   }
 
   @include respond(laptop) {
-    margin: 10rem 2%;
+    margin: 0rem 0%;
   }
 
   &__quote-cardWrapper {
@@ -106,21 +107,27 @@
   }
 
   &__info {
-    font-size: 1.9rem;
-    font-weight: 400;
-    height: 40rem;
+    height: 57rem;
     margin-left: 2rem;
+
+
+    font-family: Sofia Pro;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.2rem;
+    letter-spacing: 0.02em;
 
     @include respond(laptop) {
       height: 20rem;
     }
 
     @include respond(tablet-large) {
-      height: 30rem;
+      height: 25rem;
     }
 
     @include respond(mobile-medium) {
-      height: 40rem;
+      height: 35rem;
     }
   }
 
@@ -154,6 +161,9 @@
     }
   }
 
+  &__info {
+  }
+
   &__title {
     text-align: center;
     font-size: 5rem;
@@ -167,17 +177,13 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 3.1rem;
+    line-height: 3.5rem;
     letter-spacing: 0.02em;
     text-align: center;
     margin: 5rem 20%;
 
-    @include respond(laptop-large) {
-      margin: 5rem 15%;
-    }
-
     @include respond(laptop) {
-      margin: 5rem 8%;
+      margin: 4rem 2%;
     }
   }
 }

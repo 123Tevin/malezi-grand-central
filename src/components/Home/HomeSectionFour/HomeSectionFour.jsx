@@ -42,7 +42,7 @@ function HomeSectionFour() {
           <h3 className="home-four--infoTwo">WE APPLY</h3>
           <div className="home-four--btnWrapper">
             <Link to="/learn" className="home-four--btn">
-              <BtnThree />
+              {/* <BtnThree /> */}
             </Link>
             <p className="home-four--descOne">
               SCIENCE AND TECHNOLOGY TO SUPPORT CAREGIVERS TO EXPAND THE

@@ -4,7 +4,7 @@
 .home-fourWrapper {
   display: flex;
   justify-content: center;
-  margin: 10rem 20%;
+  margin: 4rem 20%;
 
   @include respond(laptop) {
     flex-direction: column;
@@ -59,7 +59,6 @@
   &--infoOne {
     color: $color-green;
     margin-left: 50%;
-    text-align: center;
 
     font-size: 7rem;
     font-style: normal;
@@ -69,11 +68,11 @@
     @include respond(laptop) {
       margin-left: unset;
       font-size: 4rem;
+      text-align: center;
     }
   }
   &--title {
     color: $color-black;
-    text-align: center;
     margin: 1.5rem 0 1.5rem 50%;
 
     font-size: 3.5rem;
@@ -83,6 +82,7 @@
     @include respond(laptop) {
       margin-left: unset;
       font-size: 2rem;
+      text-align: center;
     }
   }
   &--infoTwo {
@@ -105,7 +105,7 @@
     line-height: 2.3rem;
     letter-spacing: 0.02em;
     color: $color-green;
-    margin-left: 10rem;
+    margin-left: 35rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     @include respond(laptop) {
@@ -154,6 +154,11 @@
 
 .home-four__back-circleWrapper {
   position: relative;
+  width: 100%;
+  @include respond(tablet) {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
 
 .home-four__back-circle {
@@ -191,6 +196,11 @@
     @include respond(tablet) {
       display: flex;
       justify-content: center;
+      width: 100%;
+    }
+
+    & img {
+      width: 97.5%;
     }
   }
 }

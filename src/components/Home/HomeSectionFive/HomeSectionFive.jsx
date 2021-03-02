@@ -7,15 +7,20 @@ import cardTwo from "../../../assets/icons/image5.jpg";
 import cardThree from "../../../assets/icons/image6.jpg";
 import cardFour from "../../../assets/icons/image7.jpg";
 import cardFive from "../../../assets/icons/image8.jpg";
-
-import { ReactComponent as LineOne } from "../../../assets/images/line1.svg";
+import { ReactComponent as Triange } from "../../../assets/icons/triangle.svg";
+import { ReactComponent as LineSixIcon } from "../../../assets/icons/line6.svg";
 
 function HomeSectionFive() {
   return (
     <div className="home-five">
       <h1 className="home-five__title">OUR SOLUTIONS</h1>
+
       <div className="home-five__line">
-        <LineOne />
+        <div className="lineIcon">
+          <LineSixIcon />
+          <Triange />
+          <LineSixIcon />
+        </div>
       </div>
       <p className="home-five__desc">
         We complement and extend the current education system which expects

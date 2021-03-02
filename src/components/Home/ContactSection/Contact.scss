@@ -2,18 +2,19 @@
 @import "../../../styles/mixins";
 
 .contact {
-  margin: 10rem 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 50rem;
 
+  margin: 4rem 20%;
+
   @include respond(laptop-large) {
-    margin: 10rem 10%;
+    margin: 2rem 10%;
   }
 
   @include respond(laptop) {
-    margin: 10rem 2%;
+    margin: 0rem 0%;
   }
 
   &__title {
@@ -40,21 +41,10 @@
     }
   }
 
-  &__lineIcon {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-
-    @include respond(laptop-large) {
-      display: none;
-    }
-  }
-
   &__info {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    align-items: center;
 
     @include respond(laptop-large) {
       flex-direction: column;
@@ -103,13 +93,15 @@
       width: 100%;
       align-items: center;
       margin-bottom: 3.5rem;
+      background-color: white;
 
       @include respond(tablet) {
         width: 100%;
         flex-direction: column;
       }
 
-      & input[type="text"] {
+      & input[type="text"],
+      textarea {
         font-size: 2.1rem;
         font-weight: 500;
         line-height: 2.8rem;
@@ -120,6 +112,14 @@
         border: none;
         border-bottom: 1px solid gray;
         outline: none;
+        font-family: inherit;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
       }
     }
     &--bottom {
@@ -131,7 +131,8 @@
         flex-direction: column;
       }
 
-      & input[type="checkbox"] {
+      & input[type="checkbox"],
+      textarea {
         width: 2rem;
         height: 2rem;
       }
@@ -164,20 +165,39 @@
 
 .contact__back-circleWrapper {
   position: relative;
+  height: 70rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  @include respond(laptop-large) {
+    height: 100rem;
+  }
+  @include respond(tablet-large) {
+    height: 120rem;
+  }
 }
 
 .contact__back-circle {
-  height: 80rem;
-  width: 80rem;
+  height: 100rem;
+  width: 100rem;
   background-color: #f6ffee;
   border-radius: 50%;
   position: absolute;
-  left: 35%;
+  left: 30%;
   z-index: -100;
-  @include respond(laptop) {
-    left: 20%;
-    top: 20rem;
-    height: 60rem;
-    width: 60rem;
+  @include respond(tablet) {
+    top: 40rem;
   }
+}
+
+.home-footer {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.lineIcon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
 }

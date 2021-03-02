@@ -10,13 +10,19 @@ import userOne from "../../../assets/icons/user1.png";
 import userTwo from "../../../assets/icons/user2.png";
 import userThree from "../../../assets/icons/user3.png";
 import { ReactComponent as LineOne } from "../../../assets/images/line1.svg";
+import { ReactComponent as Triange } from "../../../assets/icons/triangle.svg";
+import { ReactComponent as LineSixIcon } from "../../../assets/icons/line6.svg";
 
 function HomeSectionSix() {
   return (
     <div className="home-six">
       <h3 className="home-six__title">REVIEWS</h3>
       <div className="home-six__line">
-        <LineOne />
+        <div className="lineIcon">
+          <LineSixIcon />
+          <Triange />
+          <LineSixIcon />
+        </div>
       </div>
       <p className="home-six__desc">
         In the interest of transparency, we never use incentives to influence

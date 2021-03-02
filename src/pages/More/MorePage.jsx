@@ -9,7 +9,7 @@ import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function MorePage() {
   const descs = [
-    "To inspire and give pride to African Children by giving them a story modeled around their lives, surroundings and experiences therefore contributing to a strengthening of African identity and love for books necessary for a strong foundation to success in life.",
+    "The MORE Africa series aspires to inspire. To inspire and give pride to African Children by giving them a story modeled around their lives, surroundings and experiences therefore contributing to a strengthening of African identity and love for books necessary for a strong foundation to success in life.",
     "The early reader series comes with an augmented reality powered companion app that takes static images off a page and brings them to life, immersing learners in the magical African stories. New media experiences will create greater motivation and interest in learning by helping children to learn in more playful and creative ways, thus promoting problem solving and exploration.",
   ];
   return (
@@ -18,7 +18,6 @@ function MorePage() {
       <SolutionOne info="More Africa Series" image={image} bgImage={bgImage} />
       <SolutionTwo title="MORE Africa Series" descs={descs} />
       <Solutions />
-      <Footer />
     </div>
   );
 }

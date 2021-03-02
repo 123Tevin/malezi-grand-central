@@ -4,7 +4,7 @@
 .home-threeWrapper {
   display: flex;
   justify-content: center;
-  margin: 20rem 20% 30rem 20%;
+  margin: 16rem 20% 30rem 20%;
 
   @include respond(laptop) {
     flex-direction: column;
@@ -158,6 +158,9 @@
 
 .home-three__back-circleWrapper {
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .home-three__back-circle {
@@ -168,6 +171,7 @@
   position: absolute;
   left: 30%;
   z-index: -100;
+  top: 15rem;
   @include respond(laptop) {
     left: 20%;
     height: 60rem;
@@ -193,6 +197,11 @@
     @include respond(tablet) {
       display: flex;
       justify-content: center;
+      width: 100%;
+    }
+
+    & img {
+      width: 97.5%;
     }
   }
 }

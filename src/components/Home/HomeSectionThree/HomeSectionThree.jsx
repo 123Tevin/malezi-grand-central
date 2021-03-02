@@ -1,11 +1,8 @@
 import { ReactComponent as ImageTwo } from "../../../assets/icons/imageOne.svg";
 import { ReactComponent as ImageThree } from "../../../assets/icons/imageThree.svg";
 import { ReactComponent as LineTwo } from "../../../assets/images/line2.svg";
-import { ReactComponent as BtnTwo } from "../../../assets/icons/btn2.svg";
 
 import smallOne from "../../../assets/images/small1.jpg";
-
-import { Link } from "react-router-dom";
 
 import "./HomeSectionThree.scss";
 
@@ -47,9 +44,6 @@ function HomeSectionThree() {
               MORE ROUNDED LEARNING, WE ARE PREPARING CHILDREN FOR PROFESSIONS
               THAT ARE YET TO BE INVENTED.
             </p>
-            <Link to="/pack" className="home-three--btn">
-              <BtnTwo />
-            </Link>
           </div>
           <p className="home-three--descTwo">
             We work throughout Africa providing education solutions for

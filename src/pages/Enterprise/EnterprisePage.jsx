@@ -9,7 +9,7 @@ import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function EnterprisePage() {
   const descs = [
-    "We work with governments and large enterprises to develop and adapt content, platforms and strategies.",
+    "We work with governments and large enterprises to develop and adapt content, platforms and strategies for new forms of learning. We collaborate with partners who share in our conviction; Learning Should Never Stop!",
   ];
   return (
     <div className="bongo-page">
