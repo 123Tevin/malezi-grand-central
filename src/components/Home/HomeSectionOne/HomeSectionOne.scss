@@ -2,18 +2,23 @@
 @import "../../../styles/mixins";
 
 .home-one {
-  background-image: url("../../../assets/images/home-one.svg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Hero%20Image.jpg?alt=media&token=3bcf387e-567c-4413-9bd2-c61121edbd04");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 70rem;
   background-position: center;
 
+  @include respond(tablet-large) {
+    height: 50rem;
+  }
+
   &__title {
     font-size: 6.5em;
     font-style: normal;
     font-weight: bolder;
     line-height: 0.9;
+    letter-spacing: 2.5px;
     color: $color-lightblue;
     text-align: center;
     padding-top: 5rem;

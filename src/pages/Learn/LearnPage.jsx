@@ -1,10 +1,7 @@
-import Footer from "../../components/Home/Footer/Footer";
+
 import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
-
-import image from "../../assets/icons/image6.jpg";
-import bgImage from "../../assets/images/image3.svg";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function LearnPage() {
@@ -17,8 +14,8 @@ function LearnPage() {
       <Nav />
       <SolutionOne
         info="Learn At Home Nigeria"
-        image={image}
-        bgImage={bgImage}
+        image="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(5).jpg?alt=media&token=6ff64814-e2dd-43d6-be48-93946699da2d"
+        bgImage="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(5).jpg?alt=media&token=6ff64814-e2dd-43d6-be48-93946699da2d"
       />
       <SolutionTwo
         title="Learn At Home Nigeria"

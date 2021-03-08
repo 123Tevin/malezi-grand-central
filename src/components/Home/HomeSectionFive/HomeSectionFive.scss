@@ -2,7 +2,7 @@
 @import "../../../styles/mixins";
 
 .home-five {
-  margin: 4rem 20%;
+  margin: 15rem 20%;
 
   @include respond(laptop-large) {
     margin: 2rem 10%;
@@ -19,7 +19,7 @@
 
   &__card-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 2rem;
 
     @include respond(laptop) {
@@ -65,9 +65,12 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
-    width: 30rem;
+    width: 28.5rem;
     & img {
       width: 100%;
+      height: 22rem;
+      object-fit: cover;
+      border-radius: 2rem;
     }
   }
 
@@ -80,13 +83,15 @@
   }
 
   &__desc {
-    font-size: 1.8rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 3.1rem;
-    letter-spacing: 0.02em;
     text-align: center;
     margin: 5rem 20%;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    color: #333;
 
     @include respond(laptop-large) {
       margin: 5rem 15%;
@@ -101,7 +106,7 @@
 .home-five__overlay--wrapper:hover .home-five__overlay {
   top: 0;
   opacity: 0.8;
-  height: 30rem;
+  height: 22rem;
   border-radius: 2rem;
 }
 

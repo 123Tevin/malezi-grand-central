@@ -3,8 +3,6 @@ import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 
-import image from "../../assets/icons/image6.jpg";
-import bgImage from "../../assets/images/image3.svg";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function EnterprisePage() {
@@ -14,7 +12,11 @@ function EnterprisePage() {
   return (
     <div className="bongo-page">
       <Nav />
-      <SolutionOne info="Malezi Enterprise" image={image} bgImage={bgImage} />
+      <SolutionOne
+        info="Malezi Enterprise"
+        image="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(1).jpeg?alt=media&token=d75be5c9-daf0-4a23-b6ab-e22080274914"
+        bgImage="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(1).jpeg?alt=media&token=d75be5c9-daf0-4a23-b6ab-e22080274914"
+      />
       <SolutionTwo title="Malezi Enterprise" descs={descs} />
       <Solutions />
     </div>

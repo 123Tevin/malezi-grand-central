@@ -1,8 +1,4 @@
-import { ReactComponent as ImageTwo } from "../../../assets/icons/imageOne.svg";
-import { ReactComponent as ImageThree } from "../../../assets/icons/imageThree.svg";
 import { ReactComponent as LineTwo } from "../../../assets/images/line2.svg";
-
-import smallOne from "../../../assets/images/small1.jpg";
 
 import "./HomeSectionThree.scss";
 
@@ -13,7 +9,7 @@ function HomeSectionThree() {
       <div className="home-threeWrapper">
         <div className="home-three">
           <h4 className="home-three--infoOne">
-            We Equip/Prepare Young <br /> Minds To
+            We Equip Young <br /> Minds To
           </h4>
           <h1 className="home-three--title">
             INVENT THE <br />
@@ -26,15 +22,18 @@ function HomeSectionThree() {
               </div>
               <div className="interchange__three">
                 <div className="interchange__three--large">
-                  <ImageThree />
-                </div>
-                <div className="interchange__three--small">
-                  <img src={smallOne} alt="Small One" />
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(3).png?alt=media&token=f15d79cc-d007-43aa-876e-8aeb8e0548e8"
+                    alt="Child Lying"
+                  />
                 </div>
               </div>
             </div>
             <div className="home-three--images__right">
-              <ImageTwo />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(8).png?alt=media&token=14148dd4-9509-41d6-9f6f-871a5373bb5b"
+                alt="Tutor Standing"
+              />
             </div>
           </div>
           <h3 className="home-three--infoTwo">WE BELIEVE</h3>

@@ -26,11 +26,13 @@
   }
 
   &__desc {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 3.1rem;
-    letter-spacing: 0.02em;
     margin: 3rem 20%;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    color: #333;
 
     @include respond(laptop-large) {
       text-align: center;
@@ -44,10 +46,14 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
 
     @include respond(laptop-large) {
       flex-direction: column;
+    }
+    @include respond(tablet) {
+      align-items: unset;
     }
   }
 
@@ -62,6 +68,16 @@
   }
   &__left {
     margin-right: 4rem;
+    margin-top: -4rem;
+    @include respond(laptop-large) {
+      margin-top: 0;
+    }
+
+    @include respond(tablet) {
+      margin-right: 0;
+      align-self: center;
+    }
+
     &--left {
       width: 22rem;
       & h3 {
@@ -93,11 +109,15 @@
       width: 100%;
       align-items: center;
       margin-bottom: 3.5rem;
-      background-color: white;
+      background-color: #f6ffee;
 
       @include respond(tablet) {
         width: 100%;
         flex-direction: column;
+      }
+
+      @include respond(laptop-large) {
+        background-color: white;
       }
 
       & input[type="text"],
@@ -108,23 +128,35 @@
         letter-spacing: 0.02em;
         padding: 2rem 2rem 1rem 0;
         width: 100%;
-        margin-right: 2rem;
         border: none;
         border-bottom: 1px solid gray;
         outline: none;
         font-family: inherit;
+        background: #f6ffee;
+
+        @include respond(laptop-large) {
+          background: white;
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+        }
       }
 
-      input:-webkit-autofill,
-      input:-webkit-autofill:hover,
-      input:-webkit-autofill:focus,
-      input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      & input:-webkit-autofill,
+      & input:-webkit-autofill:hover,
+      & input:-webkit-autofill:focus,
+      &input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px #f6ffee inset !important;
+
+        @include respond(laptop-large) {
+          -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
       }
     }
     &--bottom {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
 
       @include respond(tablet) {
@@ -156,7 +188,7 @@
         color: white;
         font-size: 1.6rem;
         font-weight: bold;
-        background: #78b521;
+        background: rgb(120, 181, 33);
         cursor: pointer;
       }
     }
@@ -178,20 +210,27 @@
 }
 
 .contact__back-circle {
-  height: 100rem;
-  width: 100rem;
+  height: 120rem;
+  width: 120rem;
   background-color: #f6ffee;
   border-radius: 50%;
   position: absolute;
-  left: 30%;
+  left: 32%;
   z-index: -100;
+  top: 10rem;
+
+  @include respond(laptop-large) {
+    height: 45rem;
+    width: 45rem;
+    top: 0rem;
+    background-color: #f6ffee;
+  }
   @include respond(tablet) {
-    top: 40rem;
+    display: none;
   }
 }
 
 .home-footer {
-  text-align: center;
   font-size: 1.8rem;
   margin-top: 2rem;
 }

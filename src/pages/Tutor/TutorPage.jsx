@@ -2,8 +2,6 @@ import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 
-import image from "../../assets/icons/image6.jpg";
-import bgImage from "../../assets/images/image3.svg";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function TutorPage() {
@@ -14,7 +12,11 @@ function TutorPage() {
   return (
     <div className="tutor-page">
       <Nav />
-      <SolutionOne info="Malezi Tutor" image={image} bgImage={bgImage} />
+      <SolutionOne
+        info="Malezi Tutor"
+        image="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Tutor%20Official%20Logo.svg?alt=media&token=65d2c88d-2764-4545-934c-7100b3298861"
+        bgImage="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(9).jpg?alt=media&token=75f7d724-d1f1-493a-860e-72b4fae2346a"
+      />
       <SolutionTwo
         title="Malezi Tutor"
         descs={descs}

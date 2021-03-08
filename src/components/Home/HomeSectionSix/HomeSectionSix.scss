@@ -4,14 +4,14 @@
 .home-six {
   background-color: #f8ffff;
 
-  margin: 4rem 20%;
+  padding: 4rem 20%;
 
   @include respond(laptop-large) {
-    margin: 2rem 10%;
+    padding: 2rem 10%;
   }
 
   @include respond(laptop) {
-    margin: 0rem 0%;
+    padding: 0rem 0%;
   }
 
   &__quote-cardWrapper {
@@ -110,13 +110,14 @@
     height: 57rem;
     margin-left: 2rem;
 
-
     font-family: Sofia Pro;
-    font-size: 1.8rem;
     font-style: normal;
+
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: 3.2rem;
+    line-height: 2.2rem;
     letter-spacing: 0.02em;
+    color: #333;
 
     @include respond(laptop) {
       height: 20rem;
@@ -174,13 +175,15 @@
 
   &__desc {
     font-family: Sofia Pro;
-    font-size: 2rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 3.5rem;
-    letter-spacing: 0.02em;
     text-align: center;
     margin: 5rem 20%;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    color: #333;
 
     @include respond(laptop) {
       margin: 4rem 2%;

@@ -2,9 +2,6 @@ import Nav from "../../components/Home/Nav/Nav";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 
-// images
-import cardThree from "../../assets/icons/image6.jpg";
-import bgImage from "../../assets/images/image2.svg";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function PackPage() {
@@ -15,7 +12,11 @@ function PackPage() {
   return (
     <div className="pack-page">
       <Nav />
-      <SolutionOne info="MsingiPACK" image={cardThree} bgImage={bgImage} />
+      <SolutionOne
+        info="MsingiPACK"
+        image="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Msingi%20Perk%20Official%20Logo.svg?alt=media&token=71e9e562-0923-45a7-af2a-9f1a67b19be3"
+        bgImage="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(13).jpg?alt=media&token=b163e328-1308-4b54-b7c5-34756d8029f9"
+      />
       <SolutionTwo
         title="MsingiPACK"
         descs={descs}

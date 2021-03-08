@@ -3,8 +3,16 @@
   display: flex;
   margin-bottom: -4rem;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
   &__menu {
     margin-right: 2rem;
     padding: 1rem 0;
   }
+}
+
+.nav-active {
+  background-color: white;
 }

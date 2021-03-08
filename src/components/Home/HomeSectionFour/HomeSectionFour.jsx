@@ -1,9 +1,5 @@
-import { ReactComponent as ImageFour } from "../../../assets/icons/img4.svg";
-import { ReactComponent as ImageFive } from "../../../assets/icons/img5.svg";
 import { ReactComponent as LineThree } from "../../../assets/icons/line3.svg";
-import { ReactComponent as BtnThree } from "../../../assets/icons/btn3.svg";
 
-import smallTwo from "../../../assets/images/small2.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -23,7 +19,10 @@ function HomeSectionFour() {
           </h4>
           <div className="home-four--images">
             <div className="home-four--images__left">
-              <ImageFive />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(9).png?alt=media&token=c7dc67a8-acf6-4a32-b302-342216cc1238"
+                alt="Tutor Standing"
+              />
             </div>
             <div className="home-four--images__right">
               <div className="disapper">
@@ -31,10 +30,10 @@ function HomeSectionFour() {
               </div>
               <div className="interchange__four">
                 <div className="interchange__four--large">
-                  <ImageFour />
-                </div>
-                <div className="interchange__four--small">
-                  <img src={smallTwo} alt="Small Two" />
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(2).jpg?alt=media&token=b2ec1a8b-e5f7-4ac1-a877-62b7c0384f3e"
+                    alt="Student Learning"
+                  />
                 </div>
               </div>
             </div>

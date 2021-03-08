@@ -1,10 +1,7 @@
-import Footer from "../../components/Home/Footer/Footer";
 import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 
-import image from "../../assets/icons/image6.jpg";
-import bgImage from "../../assets/images/image3.svg";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 
 function MorePage() {
@@ -15,7 +12,11 @@ function MorePage() {
   return (
     <div className="more-page">
       <Nav />
-      <SolutionOne info="More Africa Series" image={image} bgImage={bgImage} />
+      <SolutionOne
+        info="More Africa Series"
+        image="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/More%20Africa%20Official%20Logo.svg?alt=media&token=ad870cf4-196b-4e7c-a5d2-1d96ff20d4a8"
+        bgImage="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(11).png?alt=media&token=08c83fb2-830c-4032-9312-793f38575549"
+      />
       <SolutionTwo title="MORE Africa Series" descs={descs} />
       <Solutions />
     </div>

@@ -13,18 +13,18 @@ function Contact() {
       <div className="contact__back-circle"></div>
       <div className="contact">
         <h3 className="contact__title">CONTACT US</h3>
-        <p className="contact__desc">
-          If you have any questions, feel free to get in touch
-        </p>
 
         <div className="lineIcon">
           <LineSixIcon />
           <Triange />
           <LineSixIcon />
         </div>
+        <p className="contact__desc">
+          If you have any questions, feel free to get in touch
+        </p>
         <div className="contact__info">
           <div className="contact__left">
-            <div className="contact__leftWrapper">
+            {/* <div className="contact__leftWrapper">
               <div className="contact__left--left">
                 <h3>Phone</h3>
                 <p>0712345678</p>
@@ -33,7 +33,7 @@ function Contact() {
               <div className="contact__left--right">
                 <PhoneIcon />
               </div>
-            </div>
+            </div> */}
             <div className="contact__leftWrapper">
               <div className="contact__left--left">
                 <h3>ADDRESS</h3>
@@ -66,10 +66,9 @@ function Contact() {
                 <input type="text" placeholder="Subject" />
               </div>
               <div className="contact__right--fieldController">
-                <textarea rows={3} type="text" placeholder="Message" ></textarea>
+                <textarea rows={3} type="text" placeholder="Message"></textarea>
               </div>
               <div className="contact__right--bottom">
-                <p>I would like to receive malezi updates</p>
                 <button>Submit</button>
               </div>
             </form>

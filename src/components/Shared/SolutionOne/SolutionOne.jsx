@@ -4,7 +4,7 @@ function SolutionOne({ bgImage, image, info }) {
   return (
     <div
       className="solution-one"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url("${bgImage}")`}}
     >
       <div className="solution-one__img">
         <div className="solution-one__card">

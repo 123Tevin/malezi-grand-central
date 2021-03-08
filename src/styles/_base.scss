@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 60%; // 1rem = 10px
+  font-size: 62.5%; // 1rem = 10px
   overflow-x: hidden;
   @include respond(tablet-large) {
     font-size: 56.25%;
