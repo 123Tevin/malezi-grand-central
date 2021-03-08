@@ -188,7 +188,7 @@
 .interchange__four {
   &--large {
     & img {
-      width: 100%;
+      width: 99%;
       object-fit: cover;
       @include respond(tablet-large) {
         width: 45rem;
