@@ -86,7 +86,6 @@
         line-height: 2.9rem;
         letter-spacing: 0.02em;
         color: $color-black;
-        margin-bottom: 1rem;
       }
       & p {
         font-size: 2.1rem;
@@ -129,8 +128,8 @@
         padding: 2rem 2rem 1rem 0;
         width: 100%;
         border: none;
-        border-bottom: 1px solid gray;
         outline: none;
+        border-bottom: 1px solid gray;
         font-family: inherit;
         background: #f6ffee;
 
@@ -202,10 +201,15 @@
   overflow-x: hidden;
 
   @include respond(laptop-large) {
+    height: 90rem;
+  }
+
+  @include respond(laptop) {
     height: 100rem;
   }
-  @include respond(tablet-large) {
-    height: 120rem;
+
+  @include respond(tablet) {
+    height: 105rem;
   }
 }
 

@@ -1,6 +1,5 @@
 import { ReactComponent as LineThree } from "../../../assets/icons/line3.svg";
 
-
 import { Link } from "react-router-dom";
 
 import "./HomeSectionFour.scss";

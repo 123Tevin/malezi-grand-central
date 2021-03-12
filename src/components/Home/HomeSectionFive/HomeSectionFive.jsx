@@ -52,8 +52,7 @@ function HomeSectionFive() {
           </div>
           <p className="home-five__overlay">Malezi Tutor</p>
         </Link>
-      </div>
-      <div className="home-five__card-wrapper">
+
         <Link to="/more" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img

@@ -1,10 +1,27 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./Solutions.scss";
 
-import { ReactComponent as ArrowOne } from "../../../assets/images/arrow1.svg";
-import { ReactComponent as ArrowTwo } from "../../../assets/images/arrow2.svg";
-import { ReactComponent as ArrowThree } from "../../../assets/images/arrow3.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 function Solutions() {
   const solutionData = [
@@ -46,51 +63,104 @@ function Solutions() {
     },
   ];
 
-  const [start, setStart] = useState(0);
-  const last = start + 3;
-  const currentData = solutionData?.slice(start, last);
-
-  const previousPage = () => setStart(start - 1);
-  const nextPage = () => setStart(start + 1);
 
   return (
     <div className="solution__back-circleWrapper">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="solution__back-circle"></div>
       </div>
-      <div className="solution">
-        <h3 className="solution__title">MORE SOLUTIONS</h3>
-        <div className="solution__down">
-          <ArrowTwo />
+      {/* <div className="solution"> */}
+      <h3 className="solution__title">MORE SOLUTIONS</h3>
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        // showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
+        customTransition="all 1"
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        // deviceType={this.props.deviceType}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+        <div className="solution__card-wrapper">
+          <Link
+            to={solutionData[0].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[0].image} alt="card one" />
+            </div>
+            <p className="solution__overlay">{solutionData[0].title}</p>
+          </Link>
         </div>
         <div className="solution__card-wrapper">
-          {start > 0 && (
-            <div className="solution__left" onClick={previousPage}>
-              <ArrowOne />
+          <Link
+            to={solutionData[1].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[1].image} alt="card one" />
             </div>
-          )}
-          <div className="solution__card-wrapper">
-            {currentData.map((data, i) => (
-              <Link
-                to={data.link}
-                className="solution__overlay--wrapper"
-                key={i}
-              >
-                <div className="solution__card">
-                  <img src={data.image} alt="card one" />
-                </div>
-                <p className="solution__overlay">{data.title}</p>
-              </Link>
-            ))}
-          </div>
-          {last < 6 && (
-            <div className="solution__left" onClick={nextPage}>
-              <ArrowThree />
-            </div>
-          )}
+            <p className="solution__overlay">{solutionData[1].title}</p>
+          </Link>
         </div>
-      </div>
-      <p className="dfoot">© 2021 Malezi. All Rights Reserved</p>
+        <div className="solution__card-wrapper">
+          <Link
+            to={solutionData[2].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[2].image} alt="card one" />
+            </div>
+            <p className="solution__overlay">{solutionData[2].title}</p>
+          </Link>
+        </div>
+        <div className="solution__card-wrapper">
+          <Link
+            to={solutionData[3].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[3].image} alt="card one" />
+            </div>
+            <p className="solution__overlay">{solutionData[3].title}</p>
+          </Link>
+        </div>
+        <div className="solution__card-wrapper">
+          <Link
+            to={solutionData[4].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[4].image} alt="card one" />
+            </div>
+            <p className="solution__overlay">{solutionData[4].title}</p>
+          </Link>
+        </div>
+        <div className="solution__card-wrapper">
+          <Link
+            to={solutionData[5].link}
+            className="solution__overlay--wrapper"
+          >
+            <div className="solution__card">
+              <img src={solutionData[5].image} alt="card one" />
+            </div>
+            <p className="solution__overlay">{solutionData[5].title}</p>
+          </Link>
+        </div>
+      </Carousel>
+      <p className="dfoot" style={{ marginTop: "2rem" }}>
+        © 2021 Malezi. All Rights Reserved
+      </p>
     </div>
   );
 }
