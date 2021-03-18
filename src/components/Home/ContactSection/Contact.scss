@@ -101,7 +101,7 @@
   }
 
   &__right {
-    flex: 0 0 80%;
+    flex: 0 0 100%;
     &--fieldController {
       display: flex;
       justify-content: space-between;
@@ -115,7 +115,7 @@
         flex-direction: column;
       }
 
-      @include respond(laptop-large) {
+      @include respond(tablet) {
         background-color: white;
       }
 
@@ -133,12 +133,16 @@
         font-family: inherit;
         background: #f6ffee;
 
-        @include respond(laptop-large) {
+        @include respond(tablet) {
           background: white;
         }
 
         &:not(:last-of-type) {
           margin-right: 2rem;
+
+          @include respond(tablet) {
+            margin-right: 0rem;
+          }
         }
       }
 
@@ -200,35 +204,19 @@
   overflow-y: hidden;
   overflow-x: hidden;
 
-  @include respond(laptop-large) {
-    height: 90rem;
-  }
-
-  @include respond(laptop) {
-    height: 100rem;
-  }
-
   @include respond(tablet) {
-    height: 105rem;
+    height: 80rem;
   }
 }
 
 .contact__back-circle {
-  height: 120rem;
-  width: 120rem;
+  width: 100vw;
+  height: 100vw;
   background-color: #f6ffee;
   border-radius: 50%;
   position: absolute;
-  left: 32%;
   z-index: -100;
-  top: 10rem;
 
-  @include respond(laptop-large) {
-    height: 45rem;
-    width: 45rem;
-    top: 0rem;
-    background-color: #f6ffee;
-  }
   @include respond(tablet) {
     display: none;
   }
@@ -236,7 +224,8 @@
 
 .home-footer {
   font-size: 1.8rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .lineIcon {

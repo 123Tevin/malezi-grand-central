@@ -22,7 +22,7 @@ function HomeSectionFive() {
         children to physically go to a school with the ability to bring the
         school to wherever children may be. By so doing, we reach both those
         children in school and those out of school to give them learning
-        opportunities at any time and wherever they may be.{" "}
+        opportunities at any time and wherever they may be.
       </p>
       <div className="home-five__card-wrapper">
         <Link to="/pack" className="home-five__overlay--wrapper">

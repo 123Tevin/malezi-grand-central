@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 import "./Solutions.scss";
 
 import Carousel from "react-multi-carousel";
@@ -63,7 +64,6 @@ function Solutions() {
     },
   ];
 
-
   return (
     <div className="solution__back-circleWrapper">
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -73,9 +73,9 @@ function Solutions() {
       <h3 className="solution__title">MORE SOLUTIONS</h3>
       <Carousel
         responsive={responsive}
-        swipeable={false}
+        swipeable={true}
         draggable={false}
-        // showDots={true}
+        showDots={isMobile ? true : false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
@@ -83,8 +83,8 @@ function Solutions() {
         autoPlay={true}
         autoPlaySpeed={3000}
         keyBoardControl={true}
-        customTransition="all 1"
-        transitionDuration={1000}
+        // customTransition="all 3"
+        // transitionDuration={3000}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         // deviceType={this.props.deviceType}
