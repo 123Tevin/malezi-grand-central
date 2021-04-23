@@ -198,7 +198,7 @@
     & img {
       width: 99%;
       margin-left: 1rem;
-      object-fit: fill;
+      object-fit: cover;
       @include respond(laptop) {
         width: 100vw;
         margin-left: 0rem;
@@ -207,6 +207,12 @@
       @include respond(tablet-large) {
         height: 45rem;
         align-self: center;
+      }
+      @include respond(tablet-small) {
+        height: 25rem;
+      }
+      @include respond(mobile-medium) {
+        height: 20rem;
       }
     }
 

@@ -1,13 +1,16 @@
-import "./Contact.scss";
+import { useState } from "react";
 import emailjs from "emailjs-com";
+import Recaptcha from "react-recaptcha";
 import { useToasts } from "react-toast-notifications";
 
 import { ReactComponent as Triange } from "../../../assets/icons/triangle.svg";
 import { ReactComponent as LineSixIcon } from "../../../assets/icons/line6.svg";
-import { useState } from "react";
+
+import "./Contact.scss";
 
 function Contact() {
   const { addToast } = useToasts();
+  const [isVerified, setIsVerified] = useState(false);
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -18,29 +21,35 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_rjdluhx",
-        "template_cqkcpqg",
-        state,
-        "user_hARhvvMeSAkR7fMaNG9jJ"
-      )
-      .then(
-        function (response) {
-          addToast("Email Successfully sent. Thank you!", {
-            appearance: "success",
-            autoDismiss: true,
-          });
-        },
-        function (error) {
-          addToast("Could not sent this email. Try later!", {
-            appearance: "error",
-            autoDismiss: true,
-          });
-        }
-      );
-    resetForm();
+    if (!isVerified) {
+      addToast("Please verify that you are not a robot!", {
+        appearance: "warning",
+        autoDismiss: true,
+      });
+    } else {
+      emailjs
+        .send(
+          "service_rjdluhx",
+          "template_cqkcpqg",
+          state,
+          "user_hARhvvMeSAkR7fMaNG9jJ"
+        )
+        .then(
+          function (response) {
+            addToast("Email Successfully sent. Thank you!", {
+              appearance: "success",
+              autoDismiss: true,
+            });
+          },
+          function (error) {
+            addToast("Could not sent this email. Try later!", {
+              appearance: "error",
+              autoDismiss: true,
+            });
+          }
+        );
+      resetForm();
+    }
   }
 
   function resetForm() {
@@ -59,6 +68,14 @@ function Contact() {
       ...state,
       [e.target.name]: e.target.value,
     });
+  }
+
+  function callback() {
+    console.log("Recaptcha Successfully loaded");
+  }
+
+  function verifyCallback(response) {
+    if (response) setIsVerified(true);
   }
 
   return (
@@ -126,9 +143,16 @@ function Contact() {
                 ></textarea>
               </div>
               <div className="contact__right--bottom">
+                <Recaptcha
+                  sitekey="6Lej6KsaAAAAACjVVChdXntZ-u0wS9mzf_-bSZwf"
+                  render="explicit"
+                  onloadCallback={callback}
+                  verifyCallback={verifyCallback}
+                />
                 <button>Submit</button>
               </div>
             </form>
+
             <p className="home-footer">© 2021 Malezi. All Rights Reserved</p>
           </div>
         </div>
