@@ -10,7 +10,7 @@ function MorePage() {
     "The early reader series comes with an augmented reality powered companion app that takes static images off a page and brings them to life, immersing learners in the magical African stories. New media experiences will create greater motivation and interest in learning by helping children to learn in more playful and creative ways, thus promoting problem solving and exploration.",
   ];
   return (
-    <div className="more-page">
+    <div className="more">
       <Nav />
       <SolutionOne
         info="More Africa Series"
