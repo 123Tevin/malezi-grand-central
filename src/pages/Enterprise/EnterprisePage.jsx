@@ -10,7 +10,7 @@ function EnterprisePage() {
     "We work with governments and large enterprises to develop and adapt content, platforms and strategies for new forms of learning. We collaborate with partners who share in our conviction; Learning Should Never Stop!",
   ];
   return (
-    <div className="bongo-page">
+    <div className="enterprise">
       <Nav />
       <SolutionOne
         info="Malezi Enterprise"
