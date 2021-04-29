@@ -1,4 +1,3 @@
-import Footer from "../../components/Home/Footer/Footer";
 import Nav from "../../components/Home/Nav/Nav";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";

@@ -54,11 +54,11 @@
 
     &--left {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       background-color: orangered;
       height: 10rem;
-      flex: 0 0 60%;
+      flex: 0 0 50%;
       img {
         width: 7rem;
       }
