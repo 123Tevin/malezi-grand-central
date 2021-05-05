@@ -7,6 +7,7 @@ import HomeSectionOne from "../../components/Home/HomeSectionOne/HomeSectionOne"
 import HomeSectionThree from "../../components/Home/HomeSectionThree/HomeSectionThree";
 import HomeSectionTwo from "../../components/Home/HomeSectionTwo/HomeSectionTwo";
 import Nav from "../../components/Home/Nav/Nav";
+import Socials from "../../components/Shared/Socials/Socials";
 
 function HomePage() {
   return (
@@ -18,6 +19,13 @@ function HomePage() {
       <HomeSectionFour />
       <HomeSectionFive />
       {/* <HomeSectionSix /> */}
+      <Socials 
+      twitter="https://twitter.com/Malezike"
+      fb="https://www.facebook.com/malezico "
+      instagram="https://www.instagram.com/malezikenya/"
+      linkedin=""
+      youtube=""
+      />
       <Contact />
     </div>
   );

@@ -3,6 +3,7 @@ import Solutions from "../../components/Shared/Solutions/Solutions";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
+import Socials from "../../components/Shared/Socials/Socials";
 
 function PackPage() {
   const descs = [
@@ -21,6 +22,13 @@ function PackPage() {
         title="MsingiPACK"
         descs={descs}
         link="https://academy.msingipack.com/"
+      />
+      <Socials
+        twitter="https://twitter.com/MsingiPACK"
+        fb="https://www.facebook.com/MsingiPACK"
+        instagram="https://www.instagram.com/msingipack_ke/"
+        linkedin="https://www.linkedin.com/in/msingipack-elearning/"
+        youtube="https://www.youtube.com/channel/UCPPPbsIbM300R2C3dQiTl9w"
       />
       <Solutions />
     </div>

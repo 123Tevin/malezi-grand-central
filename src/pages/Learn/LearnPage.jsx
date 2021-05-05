@@ -1,5 +1,5 @@
-
 import Nav from "../../components/Home/Nav/Nav";
+import Socials from "../../components/Shared/Socials/Socials";
 import SolutionOne from "../../components/Shared/SolutionOne/SolutionOne";
 import Solutions from "../../components/Shared/Solutions/Solutions";
 import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
@@ -21,6 +21,13 @@ function LearnPage() {
         title="Learn At Home Nigeria"
         descs={descs}
         link="https://learnathome.ng/"
+      />
+      <Socials
+        twitter="https://twitter.com/LearnathomeNg"
+        fb="https://www.facebook.com/LearnathomeNg/"
+        instagram="https://www.instagram.com/learnathomeng/"
+        linkedin=""
+        youtube="https://www.youtube.com/channel/UC6MUXsmD7_ycxcHeND_c-Yw"
       />
       <Solutions />
     </div>
