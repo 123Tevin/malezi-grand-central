@@ -20,7 +20,7 @@ function BongoPage() {
       <div className="bongo-page">
         <div className="bongo-page__left">
           <p className="bongo-page__left--title">
-            Unleash Your <br /> Learning Online
+            The No.1 Education <br /> app in Kenya
           </p>
           <p className="bongo-page__left--desc">
             Chemsa Bongo enables you to test your knowledge based on a set of
