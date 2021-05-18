@@ -23,9 +23,7 @@ function BongoPage() {
             The No.1 Education <br /> app in Kenya
           </p>
           <p className="bongo-page__left--desc">
-            Chemsa Bongo enables you to test your knowledge based on a set of
-            questions taken from 8th Grade Primary school leaving exams from the
-            Kenya Certificae of Primay
+           Test your knowledge with Class 8 Kenya Certificate of Primary Education (KCPE) exam questions in this exciting game.
           </p>
           <a
             href="https://play.google.com/store/apps/details?id=ke.co.malezi.chemshabongo&hl=en&gl=US"
