@@ -27,12 +27,6 @@ const responsive = {
 function Solutions() {
   const solutionData = [
     {
-      link: "/pack",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(13).jpg?alt=media&token=b163e328-1308-4b54-b7c5-34756d8029f9",
-      title: "MsingiPack",
-    },
-    {
       link: "/learn",
       image:
         "https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(5).jpg?alt=media&token=6ff64814-e2dd-43d6-be48-93946699da2d",
