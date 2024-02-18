@@ -25,15 +25,6 @@ function HomeSectionFive() {
         opportunities at any time and wherever they may be.
       </p>
       <div className="home-five__card-wrapper">
-        <Link to="/pack" className="home-five__overlay--wrapper">
-          <div className="home-five__card">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(13).jpg?alt=media&token=b163e328-1308-4b54-b7c5-34756d8029f9"
-              alt="card one"
-            />
-          </div>
-          <p className="home-five__overlay">MsingiPACK</p>
-        </Link>
         <Link to="/learn" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
