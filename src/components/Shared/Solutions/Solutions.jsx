@@ -140,17 +140,17 @@ function Solutions() {
             <p className="solution__overlay">{solutionData[4].title}</p>
           </Link>
         </div>
-        <div className="solution__card-wrapper">
-          <Link
-            to={solutionData[5].link}
-            className="solution__overlay--wrapper"
-          >
-            <div className="solution__card">
-              <img src={solutionData[5].image} alt="card one" />
-            </div>
-            <p className="solution__overlay">{solutionData[5].title}</p>
-          </Link>
-        </div>
+        {/*<div className="solution__card-wrapper">*/}
+        {/*  <Link*/}
+        {/*    to={solutionData[5].link}*/}
+        {/*    className="solution__overlay--wrapper"*/}
+        {/*  >*/}
+        {/*    <div className="solution__card">*/}
+        {/*      <img src={solutionData[5].image} alt="card one" />*/}
+        {/*    </div>*/}
+        {/*    <p className="solution__overlay">{solutionData[5].title}</p>*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
       </Carousel>
       <p className="dfoot" style={{ marginTop: "2rem" }}>
         © 2021 Malezi. All Rights Reserved
