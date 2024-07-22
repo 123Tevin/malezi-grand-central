@@ -56,7 +56,7 @@ function HomeSectionFive() {
         <Link to="/bongo" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(20).jpg?alt=media&token=3903da57-b7f0-4029-8053-b40720e0ab93"
+              src="https://i.postimg.cc/JnTv7mhx/chemshabongo.png"
               alt="card one"
             />
           </div>
@@ -65,11 +65,11 @@ function HomeSectionFive() {
         <Link to="/more" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://i.postimg.cc/YqyH1Mzn/three-little-pigs.avif"
+              src="https://i.postimg.cc/vTbrK6yS/Poster-Storytime-with-Zuri-Jasiri-and-Toto.png"
               alt="card one"
             />
           </div>
-          <p className="home-five__overlay">Story Time</p>
+          <p className="home-five__overlay">Story Time with Zuri,Jasiri and Toto.</p>
         </Link>
 
         <Link to="/enterprise" className="home-five__overlay--wrapper">
