@@ -65,7 +65,7 @@ function HomeSectionFive() {
         <Link to="/more" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://i.postimg.cc/vTbrK6yS/Poster-Storytime-with-Zuri-Jasiri-and-Toto.png"
+              src="https://i.postimg.cc/rsLwscmB/Website-Card-Image-01.png"
               alt="card one"
             />
           </div>
