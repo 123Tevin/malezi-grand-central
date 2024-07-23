@@ -5,11 +5,11 @@ import SolutionTwo from "../../components/Shared/SolutionTwo/SolutionTwo";
 import playstoreImg from "../../assets/images/playstore.png";
 import frontImg from "../../assets/images/back.png";
 
-import "./BongoPage.scss";
+import "./StoryTimePage.scss";
 
 import chemshaBongo from "../../assets/images/logo.png";
 
-function BongoPage() {
+function StoryTimePage() {
   const descs = [
     "Chemsha Bongo enables you to test your knowledge based on a set of questions taken from 8th Grade Primary school leaving exams from the Kenya Certificate of Primary Education (KCPE). The questions in the quiz are randomly selected from our database of over 10,000 questions in Mathematics, English Language, Swahili Language, Science and Social Studies.",
     "Once the Android application is installed on a device, playing is as simple as creating a tournament, inviting friends and having fun.",
