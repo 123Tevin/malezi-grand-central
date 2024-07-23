@@ -47,7 +47,7 @@ function HomeSectionFive() {
         <Link to="/more" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(11).png?alt=media&token=08c83fb2-830c-4032-9312-793f38575549"
+              src="https://i.postimg.cc/rsLwscmB/Website-Card-Image-01.png"
               alt="card one"
             />
           </div>
@@ -65,17 +65,18 @@ function HomeSectionFive() {
         <Link to="/storytime" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://i.postimg.cc/rsLwscmB/Website-Card-Image-01.png"
+              src="https://i.postimg.cc/vTbrK6yS/Poster-Storytime-with-Zuri-Jasiri-and-Toto.pngs"
               alt="card one"
             />
           </div>
-          <p className="home-five__overlay">Story Time with Zuri,Jasiri and Toto.</p>
+          <p className="home-five__overlay">Story Time with Zuri, Jasiri and Toto</p>
+          
         </Link>
 
         <Link to="/enterprise" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/malezi-grand-central.appspot.com/o/Malezi%20Website%20Image%20-%20%20(1).jpeg?alt=media&token=d75be5c9-daf0-4a23-b6ab-e22080274914"
+              src="https://i.postimg.cc/50FcRNvZ/african-american-male-latex-gloves-showing-something-phone-african-american-female-181624-35035.jpg"
               alt="card one"
             />
           </div>

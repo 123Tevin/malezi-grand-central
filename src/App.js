@@ -9,6 +9,7 @@ import HomePage from "./pages/Home/HomePage";
 import LearnPage from "./pages/Learn/LearnPage";
 import MorePage from "./pages/More/MorePage";
 import PackPage from "./pages/Pack/PackPage";
+import StorytimePage from "./pages/StoryTime/StoryTimePage"
 
 import TutorPage from "./pages/Tutor/TutorPage";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/more" exact component={MorePage} />
         <Route path="/bongo" exact component={BongoPage} />
         <Route path="/enterprise" exact component={EnterprisePage} />
+        <Route path="/storytime" exact component={StorytimePage} />
       </Switch>
     </div>
   );
