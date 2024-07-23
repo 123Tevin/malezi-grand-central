@@ -62,7 +62,7 @@ function HomeSectionFive() {
           </div>
           <p className="home-five__overlay">Chemsha Bongo</p>
         </Link>
-        <Link to="/StoryTime" className="home-five__overlay--wrapper">
+        <Link to="/storyTime" className="home-five__overlay--wrapper">
           <div className="home-five__card">
             <img
               src="https://i.postimg.cc/rsLwscmB/Website-Card-Image-01.png"
