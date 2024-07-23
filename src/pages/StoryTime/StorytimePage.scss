@@ -1,0 +1,68 @@
+@import "../../styles/mixins";
+.storytime-page {
+  background-image: url("../../assets/images/front.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70rem;
+  background-position: center;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include respond(tablet) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+
+    @include respond(laptop-large) {
+      flex: 0 0 50%;
+    }
+
+    &--title {
+      font-size: 3rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    &--desc {
+      font-size: 2rem;
+      color: white;
+      margin: 2rem 0;
+    }
+
+    & img {
+      width: 20rem;
+    }
+  }
+
+  &__right {
+    &--imageOne {
+      height: 70rem;
+
+      @include respond(laptop-large) {
+        width: 70rem;
+        height: auto;
+      }
+
+      @include respond(tablet-large) {
+        width: 50rem;
+        height: auto;
+      }
+    }
+
+    &--imageTwo {
+      width: 10rem;
+      position: absolute;
+      top: 2rem;
+    }
+  }
+}
